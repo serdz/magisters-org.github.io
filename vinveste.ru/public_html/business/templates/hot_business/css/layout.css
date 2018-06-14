@@ -1,0 +1,214 @@
+/*------------------------------------------------------------------------
+# "Hot Business" Joomla template - February, 2012
+# Copyright (C) 2012 ArhiNet d.o.o. All Rights Reserved.
+# License: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+# Author: HotJoomlaTemplates.com
+# Website: http://www.hotjoomlatemplates.com
+-------------------------------------------------------------------------*/
+
+body {
+	margin:0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_container {
+	margin:0 auto;
+}
+
+.big_image {
+	text-align:right;
+	position:relative;
+	top:-75px;
+	left:50px;
+}
+
+.header {
+	margin:0 auto;
+}
+
+.header_menu {
+	width:50%;
+	float:left;
+}
+
+.logo {
+	width:50%;
+	float:left;
+}
+
+.logo_pad {
+}
+
+#topmenu_wrap2 {
+	margin:0 auto;
+}
+	
+#topmenu {
+	height:70px;
+	float:left;
+	width:80%;
+}
+
+#topmenu_pad {
+	padding:20px 0 0 0;
+}
+
+.path {
+	height:30px;
+	margin-bottom:15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.path_pad {
+	padding-left:15px;
+}
+
+.gallery_wrap {
+}
+
+.gallery {
+	height:100%;
+	margin:0 auto;
+}
+
+.main_area {
+	padding:30px 0 0 0;
+	line-height:18px;
+}
+
+#content_wrap {
+	float:left;
+}
+
+.content_pad {
+	padding:0 45px 15px 45px;
+}
+
+.content_pad_noleft {
+	padding:0 45px 15px 0;
+}
+
+.content_pad_noright {
+	padding:0 0 15px 45px;
+}
+
+.content_pad_noleft_noright {
+	padding:0 0 15px 0;
+}
+
+#column_left,
+#column_right {
+	float:left;
+	padding-bottom:15px;
+}
+
+#column_left > .moduletable, #column_left > .moduletable_contact,
+#column_right > .moduletable, #column_right > .moduletable_contact {
+	margin:0 0 15px 0;
+	padding:0;
+}
+
+.upper {
+	padding:15px 0;
+	margin:0 auto;
+}
+
+.upper .last {
+	height:300px;
+}
+
+.main_area {
+	margin:0 auto;	
+}
+
+.bottom_wrap {
+	background:#eee;	
+	border-top:1px solid #ccc;
+}
+
+.bottom {
+	padding:20px 0;
+	line-height:22px;
+	margin:0 auto;
+}
+
+.topPanelModules .modulerow {
+	border:none;
+}
+
+#c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8 {
+	padding-top:4px;
+}
+
+.module_padding {
+	padding:0;
+	margin:0 40px 0 0;
+	float:left;
+}
+
+.last, .upper_wrap .module_padding {
+	margin:0;
+}
+
+#c1.last, #c2.last, #c3.last, #c4.last, #c5.last, #c6.last, #c7.last, #c8.last {
+	margin-right:0;	
+}
+
+.inset_pad {
+	padding-bottom:15px	
+}
+
+.footer_wrap {
+	line-height:16px;
+	padding:40px 0;
+}
+
+.footer_wrap2 {
+	padding:30px;
+}
+
+.footer_wrap3 {
+	padding:30px;
+}
+
+.footer, .footer2, .footer3, .footer4 {
+	margin:0 auto;
+}
+
+.footer3 {
+	line-height:16px;
+}
+
+.footer4 {
+	padding:15px 0 30px 0;
+}
+
+.footer_copyright1, .footer_copyright2 {
+	width:50%;
+	float:left;
+}
+
+.footer_copyright1_pad {
+	text-align:left;
+}
+
+.footer_copyright1 ul.menu li a:link, .footer_copyright1 ul.menu li a:visited,
+.footer_copyright2 ul.menu li a:link, .footer_copyright2 ul.menu li a:visited {
+	padding:0;
+}
+
+.footer_copyright2 {
+	text-align:right;
+}
+
+.clr {
+	clear:both;
+}
+
+#autohidebacktotop {
+	position:fixed;
+	bottom:5px;
+	right:5px;
+}

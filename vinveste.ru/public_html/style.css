@@ -1,0 +1,2430 @@
+/*
+Theme Name: Моника
+Description: Тема для Моники.
+Version: 1.0
+*/
+@charset "utf-8";
+
+@font-face {
+    font-family: 'PFDinTextCompProRegular';
+    src:	url("fonts/PFDinTextCompPro-Regular.ttf")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFDinTextCompPro-Regular.ttf*/ format('truetype'),
+			url("fonts/PFDinTextCompPro-Regular.eot")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFDinTextCompPro-Regular.eot*/,
+			url("fonts/PFDinTextCompPro-Regular.eot-#iefix")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFDinTextCompPro-Regular.eot?#iefix*/ format('embedded-opentype'),
+			url("fonts/PFDinTextCompPro-Regular.woff")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFDinTextCompPro-Regular.woff*/ format('woff'),
+			url("fonts/PFDinTextCompPro-Regular.svg#PFDinTextCompProRegular")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFDinTextCompPro-Regular.svg#PFDinTextCompProRegular*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFDinTextCompProMedium';
+    src: url("fonts/PFDinTextCompPro-Medium.eot")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFDinTextCompPro-Medium.eot*/;
+    src: url("fonts/PFDinTextCompPro-Medium.eot-#iefix")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFDinTextCompPro-Medium.eot?#iefix*/ format('embedded-opentype'),
+         url("fonts/PFDinTextCompPro-Medium.woff")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFDinTextCompPro-Medium.woff*/ format('woff'),
+         url("fonts/PFDinTextCompPro-Medium.ttf")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFDinTextCompPro-Medium.ttf*/ format('truetype'),
+         url("fonts/PFDinTextCompPro-Medium.svg#PFDinTextCompProMedium")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFDinTextCompPro-Medium.svg#PFDinTextCompProMedium*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansProRegular';
+    src: url("fonts/PFBeauSansPro-Regular.eot")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Regular.eot*/;
+    src: url("fonts/PFBeauSansPro-Regular.eot-#iefix")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Regular.eot?#iefix*/ format('embedded-opentype'),
+         url("fonts/PFBeauSansPro-Regular.woff")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Regular.woff*/ format('woff'),
+         url("fonts/PFBeauSansPro-Regular.ttf")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Regular.ttf*/ format('truetype'),
+         url("fonts/PFBeauSansPro-Regular.svg#PFBeauSansProRegular")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Regular.svg#PFBeauSansProRegular*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansProSeBold';
+    src: url("fonts/PFBeauSansPro-SeBold.eot")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-SeBold.eot*/;
+    src: url("fonts/PFBeauSansPro-SeBold.eot-#iefix")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-SeBold.eot?#iefix*/ format('embedded-opentype'),
+         url("fonts/PFBeauSansPro-SeBold.woff")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-SeBold.woff*/ format('woff'),
+         url("fonts/PFBeauSansPro-SeBold.ttf")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-SeBold.ttf*/ format('truetype'),
+         url("fonts/PFBeauSansPro-SeBold.svg#PFBeauSansProSeBold")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-SeBold.svg#PFBeauSansProSeBold*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansProBoldItalic';
+    src: url("fonts/PFBeauSansPro-BoldItalic.eot")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-BoldItalic.eot*/;
+    src: url("fonts/PFBeauSansPro-BoldItalic.eot-#iefix")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-BoldItalic.eot?#iefix*/ format('embedded-opentype'),
+         url("fonts/PFBeauSansPro-BoldItalic.woff")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-BoldItalic.woff*/ format('woff'),
+         url("fonts/PFBeauSansPro-BoldItalic.ttf")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-BoldItalic.ttf*/ format('truetype'),
+         url("fonts/PFBeauSansPro-BoldItalic.svg#PFBeauSansProBoldItalic")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-BoldItalic.svg#PFBeauSansProBoldItalic*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansProBold';
+    src: url("fonts/PFBeauSansPro-Bold.eot")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Bold.eot*/;
+    src: url("fonts/PFBeauSansPro-Bold.eot-#iefix")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Bold.eot?#iefix*/ format('embedded-opentype'),
+         url("fonts/PFBeauSansPro-Bold.woff")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Bold.woff*/ format('woff'),
+         url("fonts/PFBeauSansPro-Bold.ttf")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Bold.ttf*/ format('truetype'),
+         url("fonts/PFBeauSansPro-Bold.svg#PFBeauSansProBold")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Bold.svg#PFBeauSansProBold*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansProBlackItal';
+    src: url("fonts/PFBeauSansPro-BlackItal.eot")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-BlackItal.eot*/;
+    src: url("fonts/PFBeauSansPro-BlackItal.eot-#iefix")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-BlackItal.eot?#iefix*/ format('embedded-opentype'),
+         url("fonts/PFBeauSansPro-BlackItal.woff")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-BlackItal.woff*/ format('woff'),
+         url("fonts/PFBeauSansPro-BlackItal.ttf")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-BlackItal.ttf*/ format('truetype'),
+         url("fonts/PFBeauSansPro-BlackItal.svg#PFBeauSansProBlackItal")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-BlackItal.svg#PFBeauSansProBlackItal*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansProBook';
+    src: url("fonts/PFBeauSansPro-Book.eot")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Book.eot*/;
+    src: url("fonts/PFBeauSansPro-Book.eot-#iefix")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Book.eot?#iefix*/ format('embedded-opentype'),
+         url("fonts/PFBeauSansPro-Book.woff")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Book.woff*/ format('woff'),
+         url("fonts/PFBeauSansPro-Book.ttf")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Book.ttf*/ format('truetype'),
+         url("fonts/PFBeauSansPro-Book.svg#PFBeauSansProBook")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFBeauSansPro-Book.svg#PFBeauSansProBook*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFAgoraSansProMediumItal';
+    src: url("fonts/PFAgoraSansPro-MediumItal.eot")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFAgoraSansPro-MediumItal.eot*/;
+    src: url("fonts/PFAgoraSansPro-MediumItal.eot-#iefix")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFAgoraSansPro-MediumItal.eot?#iefix*/ format('embedded-opentype'),
+         url("fonts/PFAgoraSansPro-MediumItal.woff")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFAgoraSansPro-MediumItal.woff*/ format('woff'),
+         url("fonts/PFAgoraSansPro-MediumItal.ttf")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFAgoraSansPro-MediumItal.ttf*/ format('truetype'),
+         url("fonts/PFAgoraSansPro-MediumItal.svg#PFAgoraSansProMediumItal")/*tpa=http://monica24.com/wp-content/themes/monika/fonts/PFAgoraSansPro-MediumItal.svg#PFAgoraSansProMediumItal*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+width:100%;
+height:100%;
+}
+
+ul, li, body, html{
+padding:0;
+margin:0;
+}
+
+body{
+font-family: Arial;
+font-size:12px;
+background-color:#f7f7f7;
+min-width:1070px;
+height: auto !important;
+min-height:100%;
+position:relative;
+padding:0;
+border:0;
+}
+
+ul li{
+list-style: none;
+}
+
+img{
+border:0;
+}
+
+a{
+text-decoration:none;
+color:black;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+border-radius:5px;
+border:1px solid #cbcbcb;
+padding:5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus{
+box-shadow: 0 0 5px #d53f3b;
+border:1px solid white;
+}
+.rad{
+position:obsolute;
+float:left;
+padding:1px;
+width:10px;
+
+}
+hr{
+border-top:1px solid #cfcfcf;
+border-bottom:1px solid white;
+margin:0;
+padding:0;
+}
+
+h1{
+font-family:'PFDinTextCompProRegular';
+font-size:50.96px;
+font-weight:normal;
+color:#505050;
+padding:0;
+margin:0;
+text-shadow: 0px 1px 1px white;
+}
+
+h2{
+font-family:Arial;
+font-size:20px;
+font-weight:bold;
+color:#cf402e;
+padding:0;
+margin:0;
+}
+
+.cl{
+clear:both;
+}
+
+.red{
+color:red;
+}
+
+.red2{
+color:#cf402e;
+}
+
+.justifyfull {text-align: justify;}
+.justifyright {text-align: right;}
+.justifyleft {text-align: left;}
+
+.center{
+width:1000px;
+height:100%;
+margin:0 auto;
+position:relative;
+}
+
+
+#header{
+background:#020202 url(images/bg_header.jpg)/*tpa=http://monica24.com/wp-content/themes/monika/images/bg_header.jpg*/ center 0 no-repeat;
+height:283px;
+position:relative;
+overflow:hidden;
+}
+
+#header .bottom{
+background:url(images/zig.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/zig.png*/ 0 0 repeat-x;
+width:100%;
+height:23px;
+position:absolute;
+bottom:0;
+}
+
+#header .logo{
+width:400px;
+height:138px;
+display:block;
+position:absolute;
+top:75px;
+background:url(images/logo.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/logo.png*/ 0 0 no-repeat;
+text-indent:9999px;
+line-height:999px;
+overflow:hidden;
+}
+
+#en #header .logo{
+background:url(images/logo_en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/logo_en.png*/ 0 0 no-repeat;
+width:400px;
+height:141px;
+}
+
+#header.inside{
+height: 220px;
+}
+
+#header.inside .logo{
+background:url(images/logo_inside.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/logo_inside.png*/ 0 0 no-repeat;
+width:400px;
+height:90px;
+}
+
+#en #header.inside .logo{
+background:url(images/logo_inside_en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/logo_inside_en.png*/ 0 0 no-repeat;
+}
+
+#header.inside .profit{
+background:url(images/header_profit.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/header_profit.png*/ 0 0 no-repeat;
+width:332px;
+height:87px;
+overflow:hidden;
+text-indent:9999px;
+line-height:9999px;
+position:absolute;
+right:50px;
+top:98px;
+}
+
+#en #header.inside .profit{
+background:url(images/header_profit_en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/header_profit_en.png*/ 0 0 no-repeat;
+width:303px;
+height:89px;
+}
+
+#header.inside .monika{
+background:url(images/monika.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/monika.png*/ 0 0 no-repeat;
+width:210px;
+height:354px;
+position:absolute;
+top:50px;
+left:390px;
+}
+
+#header .menu{
+z-index: 100;
+position: absolute;
+top: 0;
+}
+
+#header .menu li{
+float:left;
+padding-left:9px;
+padding-right:9px;
+padding-top:15px;
+padding-bottom:7px;
+margin-right: 1px;
+font-family:'PFBeauSansProRegular';
+font-size:12px;
+color:transparent;
+text-align:center;
+z-index:100;
+}
+
+#header .menu li:hover,
+#header .menu li.active{
+background-color:#d53f3b;
+border-radius:0px 0px 5px 5px;
+color:white;
+}
+
+#header .menu li.active a{
+/*color:#474645;*/
+}
+
+
+#header .menu li a{
+color:#f7f7f7;
+font-family:'PFDinTextCompProRegular';
+font-size:24.32px;
+text-shadow: 0px 1px 1px #16181a;
+text-transform:uppercase;
+}
+
+
+#header .center .oblako{
+background: url(images/oblako.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/oblako.png*/ 0 0 no-repeat;
+width: 417px;
+height: 145px;
+position: absolute;
+top: 92px;
+right: 0;
+color: white;
+font-family: 'PFAgoraSansProMediumItal';
+font-size: 17.6px;
+overflow: hidden;
+display: table;
+}
+
+#header .center .oblako div{
+display: table-cell;
+vertical-align: middle;
+padding: 0 10px 0 70px;
+}
+
+
+#reg{
+height:340px;
+padding-top:27px;
+position:relative;
+}
+
+#reg .reg_button{
+background: url(images/reg_button.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/reg_button.png*/ 0 0 no-repeat;
+display:block;
+width:302px;
+height:80px;
+overflow:hidden;
+margin-bottom:30px;
+font-family: 'PFBeauSansProBoldItalic';
+font-size: 35.59px;
+color:white;
+text-shadow: 1px 1px 1px #8c080d;
+text-align: center;
+line-height: 60px;
+}
+
+#reg .reg_button:hover{
+background: url(images/reg_button_hover.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/reg_button_hover.png*/ 0 0 no-repeat;
+}
+
+#reg form{
+width:300px;
+text-align:center;
+font-family:'PFBeauSansProSeBold';
+font-size:15.85px;
+color:#252525;
+}
+
+#reg form input{
+width:100%;
+}
+
+#reg form input[type="submit"]{
+background: url(images/vhod.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/vhod.png*/ 0 8px no-repeat;
+border: 0;
+width: 162px;
+height: 50px;
+cursor: pointer;
+margin: 31px auto 0 auto;
+font-family: 'PFBeauSansProSeBold';
+font-size: 19.04px;
+color: white;
+text-shadow: 1px 1px 1px #957e00;
+display: block;
+}
+
+#reg form .submit{
+background: url(images/vhod.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/vhod.png*/ 0 0 no-repeat;
+border: 0;
+width: 162px;
+height: 43px;
+cursor: pointer;
+margin: 31px auto 0 auto;
+font-family: 'PFBeauSansProSeBold';
+font-size: 19.04px;
+color: white;
+text-shadow: 1px 1px 1px #957e00;
+display: block;
+line-height:32px;
+}
+
+#reg form input[type="submit"]:hover{
+background: url(images/vhod_hover.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/vhod_hover.png*/ 0 8px no-repeat;
+}
+
+#reg form .submit:hover{
+background: url(images/vhod_hover.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/vhod_hover.png*/ 0 0 no-repeat;
+}
+
+#reg .zabil{
+color:#cf402e;
+text-decoration:underline;
+font-family:'PFBeauSansProSeBold';
+font-size:14px;
+}
+
+#reg .zabil:hover{
+text-decoration:none;
+}
+
+#reg .monika_big{
+background: url(images/monika_big.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/monika_big.png*/ 0 0 no-repeat;
+width: 331px;
+height: 531px;
+position: absolute;
+top: -220px;
+left: 310px;
+z-index: 10;
+cursor:pointer;
+}
+
+#reg .monika_big:hover{
+background: url(images/monika_big_close.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/monika_big_close.png*/ 0 0 no-repeat;
+}
+
+#reg .monika_pomoget{
+background: url(images/monika_pomoget.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/monika_pomoget.png*/ 0 0 no-repeat;
+width: 341px;
+height: 322px;
+position: absolute;
+top: 0;
+right: 0;
+}
+
+#en #reg .monika_pomoget{
+background: url(images/monika_pomoget_en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/monika_pomoget_en.png*/ 0 0 no-repeat;
+width: 321px;
+height: 327px;
+}
+
+
+
+
+#calc{
+background: url(images/bg_calc.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/bg_calc.png*/ 0 0 repeat-x;
+height:241px;
+position:relative;
+overflow:hidden;
+}
+
+#calc .center .left{
+float: left;
+width: 321px;
+height: 100%;
+padding-top: 30px;
+padding-left: 14px;
+}
+
+#calc .center .left .vlogi{
+font-family:'PFBeauSansProBoldItalic';
+font-size:29.2px;
+color:#292929;
+text-transform:uppercase;
+float: left;
+}
+
+#calc .center .left .summa{
+font-family:'PFBeauSansProBlackItal';
+font-size:37.04px;
+color:#cf402e;
+text-shadow:1px 1px 1px white;
+float: left;
+margin:-5px 15px 0 15px;
+}
+
+#calc .shcala{
+background: url(images/shcala.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/shcala.png*/ 7px 0 no-repeat;
+width:286px;
+margin-top:8px;
+font-family:'PFBeauSansProBook';
+font-size:16px;
+color:#292929;
+}
+
+#calc .shcala .min{
+float: left;
+margin-top: 10px;
+margin-left: -2px;
+}
+
+#calc .shcala .max{
+float: right;
+margin-top: 10px;
+margin-right: -20px;
+}
+
+#calc .center .left .viplati{
+background: url(images/chasi.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/chasi.png*/ 0 center no-repeat;
+padding-left: 60px;
+font-family: 'PFBeauSansProBoldItalic';
+font-size: 17px;
+color: #363636;
+text-shadow: 1px 1px 1px white;
+margin-top: 16px;
+height: 58px;
+margin-left: -17px;
+line-height: 58px;
+}
+
+#en #calc .center .left .viplati{
+font-size:14px;
+}
+
+#calc .center .right{
+width:665px;
+float:right;
+padding-top:30px;
+position:relative;
+}
+
+#calc .center .right .poluchi{
+font-family:'PFBeauSansProBoldItalic';
+font-size:29.2px;
+color:#292929;
+text-transform:uppercase;
+float: left;
+}
+
+#calc .center .right .time{
+float: left;
+margin:-5px 15px 0 15px;
+padding-bottom:10px;
+width: 128px;
+text-align: center;
+}
+
+#calc .center .right .time div{
+font-family:'PFBeauSansProBlackItal';
+font-size:37.04px;
+color:#cf402e;
+text-shadow:1px 1px 1px white;
+padding-bottom:15px;
+}
+
+#calc .center .right .time span{
+font-family:'PFBeauSansProBook';
+font-size:18px;
+color:#292929;
+display:block;
+text-align:center;
+}
+
+#calc .center .right .text{
+font-family:'PFBeauSansProRegular';
+font-size:16px;
+color:#292929;
+}
+
+#calc .center .right .text .small{
+font-size:12px;
+padding-top: 5px;
+}
+
+#calc .center .right .text .small a{
+text-decoration:underline;
+}
+
+#calc .center .right .text .small a:hover{
+text-decoration:underline;
+}
+
+
+#calc .devaha{
+background: url(images/devaha.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/devaha.png*/ 0 0 no-repeat;
+width: 139px;
+height: 185px;
+position: absolute;
+top: 18px;
+right: -63px;
+}
+
+
+#calc #slider{
+margin-top:10px;
+position:relative;
+}
+
+#calc #slider.ui-widget-content{
+background: url(images/begunok.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/begunok.png*/ 0 0 repeat-x;
+width:286px;
+height:10px;
+border-radius:10px;
+}
+
+#calc #slider .ui-slider-handle{
+background: url(images/crug.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/crug.png*/ 0 0 no-repeat;
+width: 19px;
+height: 19px;
+display: block;
+position: absolute;
+top: -5px;
+margin-left: -10px;
+}
+
+#calc #slider .ui-slider-handle:focus{
+outline: 0;
+}
+
+#calc #slider .ui-slider-range{
+display:none;
+}
+
+
+
+
+
+#footer{
+background: #020202 url(images/bg_header.jpg)/*tpa=http://monica24.com/wp-content/themes/monika/images/bg_header.jpg*/ center 0 no-repeat;
+height: 170px;
+position: absolute;
+bottom:0;
+width:100%;
+}
+
+#footer .center{
+height: 160px;
+}
+
+#footer .top{
+background:url(images/zig_footer.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/zig_footer.png*/ 0 0 repeat-x;
+height:7px;
+}
+
+#footer .menu{
+float: right;
+margin-top: 50px;
+}
+
+#footer .menu li{
+float: left;
+padding-left: 9px;
+padding-right: 9px;
+margin-right: 1px;
+text-align: center;
+}
+
+#footer .menu li a{
+color: #f7f7f7;
+font-family: 'PFDinTextCompProRegular';
+font-size: 20.84px;
+text-shadow: 0px 1px 1px #16181a;
+text-transform: uppercase;
+}
+
+#footer .menu li.active a{
+color:#474645;
+}
+
+#footer .skype{
+background: url(images/skype.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/skype.png*/ 0 0 no-repeat;
+height: 39px;
+padding-left: 40px;
+color: #f9e399;
+text-decoration: underline;
+font-family: Arial;
+font-size: 14px;
+display: block;
+position: absolute;
+left: 230px;
+bottom: 30px;
+line-height: 30px;
+}
+
+#footer .skype:hover,
+#footer .admin a:hover{
+text-decoration:none;
+}
+
+#footer .admin{
+height: 39px;
+color: #f9e399;
+font-family: Arial;
+font-size: 14px;
+display: block;
+position: absolute;
+left: 340px;
+bottom: 30px;
+line-height: 30px;
+}
+
+#footer .admin a{
+height: 39px;
+color: #f9e399;
+text-decoration: underline;
+font-family: Arial;
+font-size: 14px;
+line-height: 30px;
+}
+
+#en #footer .admin{
+left: 350px;
+}
+
+#footer .copy{
+font-family: Arial;
+color: white;
+font-size: 12px;
+position: absolute;
+left: 420px;
+bottom: 47px;
+}
+
+#footer .copy a{
+font-family: Arial;
+color: white;
+font-size: 12px;
+text-decoration:none;
+}
+
+#footer .copy a:hover{
+text-decoration:underline;
+}
+
+#footer .logo{
+background: url(images/logo_small.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/logo_small.png*/ 0 0 no-repeat;
+width: 198px;
+height: 44px;
+display: block;
+position: absolute;
+right: 0;
+bottom: 30px;
+}
+
+#en #footer .logo{
+background: url(images/logo_small_en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/logo_small_en.png*/ 0 0 no-repeat;
+}
+
+#footer .devaha{
+background: url(images/devaha_footer.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/devaha_footer.png*/ 0 0 no-repeat;
+width: 177px;
+height: 170px;
+position: absolute;
+top: -30px;
+}
+
+
+
+
+#stat{
+padding-top:30px;
+}
+
+#stat .center{
+margin: 0 auto 30px auto;
+}
+
+#stat .block1{
+width:300px;
+margin-right:50px;
+float:left;
+}
+
+#stat .block1 .stat_title{
+margin-right: 20px;
+}
+
+#stat .block1 .stat_title,
+#stat .block1 .top_title{
+font-family:'PFDinTextCompProMedium';
+font-size:30px;
+text-transform:uppercase;
+text-shadow: 0px 1px 1px white;
+display:block;
+float:left;
+text-decoration:underline;
+color:#cf837a;
+}
+
+#stat .block1 .stat_title.active,
+#stat .block1 .top_title.active{
+color:#cf402e;
+text-decoration:none;
+}
+
+#stat .block1 .block_stat,
+#stat .block1 .block_top{
+display:none;
+padding-top:20px;
+}
+
+#stat .block1 .block_stat table,
+#stat .block1 .block_top table{
+border-collapse: collapse;
+border:0;
+width:300px;
+color:#252525;
+}
+
+#stat .block1 .block_stat table tr td,
+#stat .block1 .block_top table tr td{
+border-collapse: collapse;
+border:0;
+padding:0 0 16px 0;
+/*
+display: block;
+float: left;
+*/
+}
+
+#stat .block1 .block_stat table tr td:first-child,
+#stat .block1 .block_top table tr td{
+overflow:hidden;
+white-space:nowrap;
+font-family:'PFBeauSansProSeBold';
+font-size:15px;
+}
+
+#stat .block1 .block_stat table tr td:last-child{
+font-family:'PFBeauSansProRegular';
+font-size:15px;
+text-align:right;
+}
+
+#stat .block1 .block_stat table tr td span{
+font-size:10px;
+font-family:Arial;
+}
+
+#stat .block2{
+width:295px;
+float:left;
+}
+
+#stat .block2 .title{
+font-family:'PFDinTextCompProMedium';
+font-size:30px;
+text-transform:uppercase;
+text-shadow: 0px 1px 1px white;
+color:#cf402e;
+margin-left:10px;
+}
+
+#stat .block2 table{
+border-collapse: collapse;
+border:0;
+width:100%;
+}
+
+#stat .block2 table th{
+border-collapse: collapse;
+border:0;
+font-family:'PFBeauSansProSeBold';
+font-size:15px;
+color:#252525;
+text-align:center;
+padding:10px;
+}
+
+#stat .block2 table th:first-child{
+text-align:left;
+}
+
+#stat .block2 table th:last-child{
+text-align:right;
+}
+
+#stat .block2 table tr.grey,
+#stat .block2 table tr.grey td{
+background-color:#eaeaea;
+}
+
+#stat .block2 table td{
+font-family:Arial;
+font-size:13px;
+font-weight:bold;
+color:#cf402e;
+text-align:center;
+padding: 10px;
+}
+
+#stat .block2 table td:first-child{
+text-align:left;
+font-weight:normal;
+color:#252525;
+}
+
+#stat .block2 table td:last-child{
+text-align:right;
+font-weight:normal;
+color:#252525;
+}
+
+
+#stat .block3{
+width:302px;
+float:right;
+}
+
+#stat .block3 .title{
+font-family:'PFDinTextCompProMedium';
+font-size:30px;
+text-transform:uppercase;
+text-shadow: 0px 1px 1px white;
+color:#cf402e;
+margin-bottom:12px;
+}
+
+#stat .block3 .text{
+padding:20px 18px;
+border:1px solid #cbcbcb;
+border-radius:10px;
+font-family:Arial;
+font-size:13px;
+color:#4d4d4d;
+text-align: justify;
+width: 264px;
+max-height: 180px;
+}
+
+#stat .block3 .text p{
+padding:0;
+margin:0;
+}
+
+#stat .block3 .text .nik{
+font-family:'PFBeauSansProSeBold';
+font-size:15px;
+color:#252525;
+margin-top:17px;
+float:right;
+}
+
+#stat .block3 .prev,
+#stat .block3 .next{
+font-family:'PFBeauSansProSeBold';
+font-size:15px;
+color:#cf402e;
+text-decoration:none;
+background:url(images/prev.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/prev.png*/ 0 0 no-repeat;
+padding-left:25px;
+display:block;
+float:left;
+margin-top:15px;
+margin-left:4px;
+}
+
+#stat .block3 .next{
+background:url(images/next.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/next.png*/ right 0 no-repeat;
+padding-right:25px;
+padding-left:0;
+margin-left:25px;
+}
+
+#stat .block3 .otzivv{
+font-family:'PFBeauSansProSeBold';
+font-size:15px;
+color:#cf402e;
+text-decoration:underline;
+display:block;
+float:right;
+margin-top:15px;
+}
+
+
+
+
+
+
+
+#metodi{
+padding-top:15px;
+padding-bottom: 180px;
+}
+
+#metodi .block1{
+width:335px;
+margin-right:27px;
+float:left;
+}
+
+#metodi .block1 .title{
+font-family:'PFDinTextCompProMedium';
+font-size:30px;
+text-transform:uppercase;
+text-shadow: 0px 1px 1px white;
+color:#cf402e;
+margin-bottom:20px;
+margin-top:20px;
+}
+
+#metodi .block1 .item{
+width:88px;
+height:88px;
+border:1px solid #cbcbcb;
+border-radius:10px;
+margin-right:15px;
+margin-bottom:15px;
+float:left;
+background-color:white;
+}
+
+#metodi .block1 .item.t1{
+background:white url(images/zashita/ddos.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/zashita/ddos.png*/ center center no-repeat;
+}
+
+#metodi .block1 .item.t2{
+background:white url(images/zashita/comodo.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/zashita/comodo.png*/ center center no-repeat;
+}
+
+#metodi .block1 .item.t3{
+background:white url(images/zashita/drago.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/zashita/drago.png*/ center center no-repeat;
+}
+
+#metodi .block1 .item.t4{
+background:white url(images/zashita/koddos.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/zashita/koddos.png*/ center center no-repeat;
+}
+
+#metodi .block1 .item.t5{
+background:white url(images/zashita/cloud.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/zashita/cloud.png*/ center center no-repeat;
+}
+
+#metodi .block1 .item.t6{
+
+}
+
+#metodi .block1 .item.t6 img{
+width: 70px;
+height: 70px;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+#metodi .block2{
+width:187px;
+background:url(images/pay/visa.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/pay/visa.png*/ 0 0 no-repeat;
+padding-left:98px;
+float:left;
+}
+
+#metodi .block2 .title{
+font-family: 'PFDinTextCompProMedium';
+font-size: 30px;
+text-transform: uppercase;
+text-shadow: 0px 1px 1px white;
+color: #cf402e;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+#en #metodi .block2 .title{
+font-size:25px;
+}
+
+#metodi .block2 ul{
+background:url(images/metodi_ul.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/metodi_ul.png*/ right 0 repeat-y;
+}
+
+#metodi .block2 ul li{
+font-family:'PFBeauSansProSeBold';
+font-size:15px;
+color:#252525;
+text-decoration:underline;
+margin-bottom:17px;
+}
+
+#metodi .block2 ul li.el{
+color:#8a8a8a;
+}
+
+#metodi .block3{
+width:328px;
+height:310px;
+float:right;
+padding-left:25px;
+padding-top: 60px;
+}
+
+#metodi .block3 img{
+margin-right: 2px;
+margin-bottom: 30px;
+/*min-width: 50px;
+height: 50px;*/
+}
+
+#metodi .block3 img.no{
+margin-right: 0;
+}
+
+
+#lang{
+position:absolute;
+right:0;
+top:68px;
+}
+
+#lang a{
+display:block;
+float:left;
+width:29px;
+height:21px;
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE 5.5+*/
+-moz-opacity: 0.5; /* Mozilla 1.6 и ниже */
+-khtml-opacity: 0.5; /* Konqueror 3.1, Safari 1.1 */
+opacity: 0.5; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */
+}
+
+#lang a.active{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100); /* IE 5.5+*/
+-moz-opacity: 1; /* Mozilla 1.6 и ниже */
+-khtml-opacity: 1; /* Konqueror 3.1, Safari 1.1 */
+opacity: 1; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */
+}
+
+#lang .ru{
+background:url(images/lang/ru.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lang/ru.png*/ 0 0 no-repeat;
+margin-right:10px;
+}
+
+#lang .en{
+background:url(images/lang/en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lang/en.png*/ 0 0 no-repeat;
+}
+
+
+
+#content{
+position:relative;
+min-height:400px;
+width:826px;
+margin:0 auto;
+padding-left:14px;
+padding-right:160px;
+padding-bottom: 200px;
+}
+
+#content .devaha{
+background: url(images/devaha.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/devaha.png*/ 0 0 no-repeat;
+width: 139px;
+height: 185px;
+position: absolute;
+top: 18px;
+right: 0;
+background-size:139px;
+}
+
+#content .devaha.support{
+background: url(images/inside/support.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/inside/support.png*/ 0 0 no-repeat;
+background-size:139px;
+}
+
+#content .devaha.news{
+background: url(images/inside/news.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/inside/news.png*/ 0 0 no-repeat;
+background-size:139px;
+}
+
+#content .devaha.photo{
+background: url(images/inside/photoalbum.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/inside/photoalbum.png*/ 0 0 no-repeat;
+background-size:139px;
+}
+
+#content .devaha.reg{
+background: url(images/inside/enter_me.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/inside/enter_me.png*/ 0 0 no-repeat;
+background-size:139px;
+}
+
+#baran{
+background: url(images/inside/message.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/inside/message.png*/ 0 0 no-repeat;
+background-size:80px;
+width: 80px;
+height: 80px;
+position: absolute;
+bottom: 190px;
+left: 490px;
+
+}
+
+#content .text{
+font-family:Arial;
+font-size:17px;
+color:#2f2f2f;
+text-align: justify;
+}
+
+
+#content .text #menu_lk{
+float: left;
+width: 275px;
+}
+
+#content.about_page{
+padding-left: 0;
+padding-right: 0;
+width: 1000px;
+height:1320px;
+}
+
+#content .text .about{
+background: url(images/about/salfetka.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/salfetka.png*/ 0px 0px no-repeat;
+width: 335px;
+height: 385px;
+font-family: 'PFBeauSansProBook';
+font-size: 17px;
+color: #013274;
+position: absolute;
+top: -40px;
+padding-left: 60px;
+padding-right: 130px;
+left: -60px;
+}
+
+#en #content .text .about{
+background: url(images/about/salfetka_en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/salfetka_en.png*/ 0px 0px no-repeat;
+}
+
+#content .text .block1{
+font-family:Arial;
+font-size:18.15px;
+font-weight:bold;
+color:#353535;
+float: right;
+margin-top: 50px;
+line-height: 32.67px;
+}
+
+#content .text .block1 span{
+color:#cf402e;
+}
+
+#content .text .block1 p{
+padding:0;
+margin:0;
+}
+
+#content .text .block1 .small{
+font-weight:normal;
+font-size:15px;
+color:#373737;
+}
+
+#content .text .block1 .small a{
+font-family:Arial;
+font-weight:normal;
+font-size:15px;
+color:#cf402e;
+text-decoration:underline;
+}
+
+#content .text .block1 .tree{
+font-family:Arial;
+font-weight:normal;
+font-size:15.43px;
+color:#2f2f2f;
+}
+
+#content .text .gotov{
+background: url(images/about/gotov_nachinaem.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/gotov_nachinaem.png*/ 0px 0px no-repeat;
+width: 413px;
+height: 39px;
+position:absolute;
+right:55px;
+top: 240px;
+}
+
+#en #content .text .gotov{
+background: url(images/about/gotov_nachinaem_en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/gotov_nachinaem_en.png*/ 0px 0px no-repeat;
+width: 407px;
+height: 43px;
+}
+
+#content .text .pris{
+background: url(images/about/pris.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/pris.png*/ 0px 0px no-repeat;
+width: 349px;
+height: 75px;
+position: absolute;
+left: 15px;
+top: 380px;
+font-family: Arial;
+font-size: 16px;
+color: #2f2f2f;
+padding: 60px 30px 0px 30px;
+text-shadow: 0px 1px 1px white;
+}
+
+#en #content .text .pris{
+background: url(images/about/pris_en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/pris_en.png*/ 0px 0px no-repeat;
+}
+
+#content .text .utraivay{
+background: url(images/about/utraivay.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/utraivay.png*/ 0px 0px no-repeat;
+width: 349px;
+height: 75px;
+position: absolute;
+left: 15px;
+top: 580px;
+font-family: Arial;
+font-size: 16px;
+color: #2f2f2f;
+padding: 60px 30px 0px 30px;
+text-shadow: 0px 1px 1px white;
+}
+
+#en #content .text .utraivay{
+background: url(images/about/utraivay_en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/utraivay_en.png*/ 0px 0px no-repeat;
+}
+
+#content .text .prodlivat{
+background: url(images/about/prodlivat.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/prodlivat.png*/ 0px 0px no-repeat;
+width: 369px;
+height: 452px;
+position: absolute;
+left: 15px;
+top: 780px;
+font-family: Arial;
+font-size: 16px;
+color: #2f2f2f;
+padding: 60px 30px 0px 30px;
+text-shadow: 0px 1px 1px white;
+line-height: 24px;
+display:block;
+}
+
+#en #content .text .prodlivat{
+background: url(images/about/prodlivat_en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/prodlivat_en.png*/ 0px 0px no-repeat;
+}
+
+#content .text .invest{
+background: url(images/about/invest.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/invest.png*/ 0px 0px no-repeat;
+width: 368px;
+height: 75px;
+position: absolute;
+right: 0;
+top: 480px;
+font-family: Arial;
+font-size: 16px;
+color: #2f2f2f;
+padding: 60px 30px 0px 30px;
+text-shadow: 0px 1px 1px white;
+}
+
+#en #content .text .invest{
+background: url(images/about/invest_en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/invest_en.png*/ 0px 0px no-repeat;
+}
+
+#content .text .invest a:hover{
+text-decoration:underline;
+}
+
+#content .text .ref{
+background: url(images/about/ref.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/ref.png*/ 0px 0px no-repeat;
+width: 370px;
+height: 175px;
+position: absolute;
+right: 0;
+top: 700px;
+font-family: Arial;
+font-size: 16px;
+color: #2f2f2f;
+padding: 70px 30px 0px 30px;
+text-shadow: 0px 1px 1px white;
+}
+
+#en #content .text .ref{
+background: url(images/about/ref_en.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/ref_en.png*/ 0px 0px no-repeat;
+}
+
+#content .text .ref a:hover{
+text-decoration:underline;
+}
+
+#content .text .shest{
+background: url(images/about/shest.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/about/shest.png*/ 0px 0px no-repeat;
+width: 427px;
+height: 978px;
+position: absolute;
+left: 125px;
+top: 360px;
+}
+
+
+
+
+
+
+
+#popup {
+width: 100%;
+height: 100%;
+top: 0px;
+left: 0px;
+position: fixed;
+background: url(images/bg_popup.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/bg_popup.png*/ 0px 0px repeat;
+z-index: 10000;
+display: none;
+}
+
+#popup.forgot .form{
+width: 350px;
+}
+
+#popup .form {
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+padding: 15px 30px 30px 30px;
+height: auto;
+left: 50%;
+top: 50%;
+position: absolute;
+border: 1px solid gray;
+-moz-box-shadow: #060606 0px 8px 60px;
+-webkit-box-shadow: #060606 0px 8px 60px;
+-o-box-shadow: #060606 0px 8px 60px;
+box-shadow: #060606 0px 8px 60px;
+background-color: white;
+font-family: 'PFBeauSansProSeBold';
+font-size: 15px;
+}
+
+#popup .form .close {
+width: 25px;
+height: 25px;
+background: url(images/close.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/close.png*/ 0 0 no-repeat;
+display: block;
+position: absolute;
+right: -13px;
+top: -13px;
+}
+
+#popup .form .title{
+font-family: 'PFDinTextCompProMedium';
+font-size: 30px;
+text-transform: uppercase;
+text-shadow: 0px 1px 1px white;
+color: #cf402e;
+margin-bottom: 12px;
+text-align:center;
+}
+
+#popup .form textarea{
+width: 376px;
+height: 199px;
+border-radius: 5px;
+border: 1px solid #cbcbcb;
+padding: 5px;
+}
+
+#popup .form input[type="text"]{
+width: 325px;
+}
+
+#popup .form input[type="submit"]{
+background: url(images/send_button.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/send_button.png*/ 0 0 no-repeat;
+border:0;
+padding:0 0 10px 0;
+margin:0;
+cursor:pointer;
+float:right;
+width:162px;
+height:43px;
+font-family: 'PFBeauSansProSeBold';
+font-size:19.04px;
+color:white;
+text-shadow: 0px 1px 1px #00416e;
+}
+
+#popup .form input[type="submit"]:hover{
+background: url(images/vhod_hover.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/vhod_hover.png*/ 0 0 no-repeat;
+}
+
+
+
+/*Личный кабинет*/
+#menu_lk{
+float: left;
+width: 300px;
+}
+
+#menu_lk li{
+width:269px;
+height:43px;
+background:url(images/lk/menu_li.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/menu_li.png*/ 0 0 no-repeat;
+margin-bottom:10px;
+}
+
+#menu_lk li:hover,
+#menu_lk li.active{
+background:url(images/lk/menu_li_hover.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/menu_li_hover.png*/ 0 0 no-repeat;
+}
+
+#menu_lk li a{
+font-family: 'PFBeauSansProSeBold';
+font-size:17px;
+color:#464646;
+display:block;
+height:100%;
+padding-left:50px;
+line-height: 45px;
+}
+
+#menu_lk li.active a{
+color:#e31b14;
+}
+
+#menu_lk li.account a{
+background:url(images/lk/account.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/account.png*/ 13px center no-repeat;
+}
+
+#menu_lk li.account.active a{
+background:url(images/lk/account_active.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/account_active.png*/ 13px center no-repeat;
+}
+
+#menu_lk li.make_vklad a{
+background:url(images/lk/make.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/make.png*/ 13px center no-repeat;
+}
+
+#menu_lk li.make_vklad.active a{
+background:url(images/lk/make_active.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/make_active.png*/ 13px center no-repeat;
+}
+
+#menu_lk li.my_vklad a{
+background:url(images/lk/vklad.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/vklad.png*/ 13px center no-repeat;
+}
+
+#menu_lk li.my_vklad.active a{
+background:url(images/lk/vklad_active.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/vklad_active.png*/ 13px center no-repeat;
+}
+
+#menu_lk li.history a{
+background:url(images/lk/history.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/history.png*/ 13px center no-repeat;
+}
+
+#menu_lk li.history.active a{
+background:url(images/lk/history_active.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/history_active.png*/ 13px center no-repeat;
+}
+
+#menu_lk li.partner a{
+background:url(images/lk/partner.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/partner.png*/ 13px center no-repeat;
+}
+
+#menu_lk li.partner.active a{
+background:url(images/lk/partner_active.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/partner_active.png*/ 13px center no-repeat;
+}
+
+#menu_lk li.exit a{
+background:url(images/lk/exit.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/exit.png*/ 13px center no-repeat;
+}
+
+
+
+
+
+.news-item{
+margin-bottom:20px;
+}
+
+.news-item p{
+padding:0;
+margin:0;
+font-family:Arial;
+font-size:14px;
+color:#252525;
+}
+
+.news-item .title{
+font-family: Arial;
+font-size:15px;
+font-weight:bold;
+color:#252525;
+}
+
+.news-item .more-link{
+font-family: Arial;
+font-size:14px;
+font-weight:bold;
+color:#252525;
+}
+
+
+
+.wp-pagenavi{
+font-family: 'PFBeauSansProRegular';
+font-size: 16px;
+color: #292929;
+text-align: center;
+}
+
+.wp-pagenavi a{
+font-family: 'PFBeauSansProRegular';
+font-size: 16px;
+color: #292929;
+}
+
+
+
+
+#block_lk{
+float: right;
+width: 530px;
+background-color: #e5e5e5;
+/*
+border-left: 1px solid #cccdcd;
+border-right: 1px solid #cccdcd;
+border-bottom: 1px solid #cccdcd;
+*/
+box-shadow: inset 0px -1px 1px #78797b;
+border-radius: 5px;
+padding:10px 10px;
+}
+
+#block_lk input:disabled,
+#block_lk textarea:disabled{
+background-color:white;
+}
+
+table {
+width:400px;
+float:left;
+}
+input {
+width:400px;
+float:left;
+}
+
+.user_email{
+position:absolute;
+right:185px;
+top:30px;
+}
+
+.user_email,
+.user_email a{
+font-family:Arial;
+font-size:17px;
+color:#2f2f2f;
+}
+
+.user_email a{
+text-decoration:underline;
+margin-left:10px;
+}
+
+.user_email a:hover{
+text-decoration:none;
+}
+
+
+#account_form{
+padding:15px 20px;
+}
+
+#account_form input[type="text"],
+#account_form input[type="password"]{
+width: 290px;
+}
+
+#account_form textarea{
+width: 290px;
+border: 1px solid #cbcbcb;
+border-radius: 5px;
+padding: 5px;
+outline: none;
+outline-style: none;
+resize: none;
+}
+
+#account_form input[type="submit"]{
+background:url(images/lk/submit.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/submit.png*/ 0 0 no-repeat;
+width:154px;
+height:35px;
+border:0;
+cursor:pointer;
+font-family: 'PFBeauSansProSeBold';
+font-size:15px;
+color:#e31b14;
+}
+
+#account_form input[type="submit"]:hover{
+background: url(images/lk/menu_li_hover.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/menu_li_hover.png*/ 0 0 no-repeat;
+background-size:154px 35px;
+}
+
+
+
+#add_vklad{
+padding:13px;
+}
+
+#add_vklad table{
+background:url(images/lk/table_podsvetka.png)/*tpa=http://monica24.com/wp-content/themes/monika/images/lk/table_podsvetka.png*/ center center no-repeat;
+margin-bottom:30px
+}
+
+#add_vklad table,
+#add_vklad table td{
+border: 1px solid #949494;
+border-collapse: collapse;
+color:#2f2f2f;
+text-align:center;
+font-family:'PFBeauSansProBold';
+}
+
+#add_vklad table td{
+padding:10px 5px;
+font-size:17px;
+vertical-align:middle;
+}
+
+#add_vklad table tr:first-child td{
+font-size:15px;
+text-shadow: 0px 1px 1px white;
+text-transform:uppercase;
+}
+
+#add_vklad table td span{
+font-family:Arial;
+font-size:12px;
+}
+
+#add_vklad form{
+position:relative;
+}
+
+#add_vklad form .white_block{
+background-color:white;
+padding:9px 10px;
+text-transform:uppercase;
+float:left;
+margin-right:10px;
+border-radius:5px;
+font-family:'PFDinTextCompProMedium';
+font-size:19px;
+color:#1e1e1e;
+margin-bottom:10px;
+}
+
+#add_vklad form a[target=_blank]{
+text-decoration:underline;
+}
+
+#add_vklad #calc{
+background:none;
+height:auto;
+padding-left: 10px;
+}
+
+
+#add_vklad form table,
+#add_vklad form table td,
+#add_vklad form table td:first-child{
+border:0;
+background:none;
+text-align:left;
+font-family: 'PFBeauSansProSeBold';
+font-size:15.69px;
+color:#1e1e1e;
+text-shadow:none;
+text-transform:none;
+}
+
+#add_vklad form .time div,
+#add_vklad form .left .summa{
+background-color:white;
+border:1px solid #a4a4a4;
+border-radius:5px;
+width:117px;
+height:26px;
+text-align:center;
+font-family:Verdana;
+font-size:18px;
+font-weight:bold;
+color:#494949;
+line-height: 26px;
+}
+
+#add_vklad form .left {
+position: absolute;
+top: 0px;
+right: 80px;
+}
+
+#add_vklad form .left .summa{
+color:#ef2923;
+display:none;
+}
+
+#add_vklad form input[type="submit"]{
+background:url(images/lk/submit.png) 0 0 no-repeat;
+width:154px;
+height:35px;
+border:0;
+cursor:pointer;
+font-family: 'PFBeauSansProSeBold';
+font-size:15px;
+color:#e31b14;
+float:right;
+}
+
+#add_vklad form input[type="submit"]:hover{
+background: url(images/lk/menu_li_hover.png) 0 0 no-repeat;
+background-size:154px 35px;
+}
+
+#add_vklad form #account_text{
+font-family: 'PFBeauSansProSeBold';
+font-size: 15px;
+margin-bottom:20px;
+text-align:center;
+}
+
+#add_vklad form input[name=amount]{
+border: 1px solid #a4a4a4;
+border-radius: 5px;
+width: 52px;
+height: 26px;
+text-align: center;
+font-family: Verdana;
+font-size: 18px;
+font-weight: bold;
+color: #ef2923;
+padding: 0;
+background: white url(images/lk/$.png) 90px center no-repeat;
+padding-right: 30px;
+padding-left: 30px;
+}
+
+#add_vklad form input[name=amount]:focus{
+outline: 0;
+box-shadow:none;
+}
+
+#my_vklad_list{
+padding:30px 20px;
+}
+
+#my_vklad_list .put_in,
+#my_vklad_list .recd{
+font-family:'PFBeauSansProBold';
+font-size:18px;
+text-transform:uppercase;
+text-shadow: 0px 1px 1px white;
+float:left;
+margin:0 10px 20px 10px;
+}
+
+#my_vklad_list .put_in span,
+#my_vklad_list .recd span{
+font-family:Verdana;
+font-size:20px;
+font-weight:bold;
+color:#ef2923;
+margin-left:10px;
+}
+
+
+#my_vklad_list .item{
+margin-top:18px;
+border:1px solid #a4a4a4;
+border-radius:5px;
+background-color:white;
+padding:30px 10px 15px 10px;
+position:relative;
+}
+
+#my_vklad_list .item .title{
+font-family:'PFBeauSansProBook';
+font-size:17px;
+color:#3f3f3f;
+text-transform:uppercase;
+margin-bottom:5px;
+}
+
+#my_vklad_list .item .title strong{
+font-family:'PFBeauSansProBold';
+font-size:17px;
+}
+
+#my_vklad_list .item .title span{
+font-family:'PFBeauSansProBold';
+font-size:17px;
+color:#ef2923;
+}
+
+#my_vklad_list .item .title2{
+font-family:Arial;
+font-size:13px;
+color:#3f3f3f;
+}
+
+#my_vklad_list .item .title2 span{
+color:#ef2923;
+}
+
+#my_vklad_list .item .title2 strong{
+font-weight:bold;
+color:#3f3f3f;
+}
+
+#my_vklad_list .item .logo_perfect{
+background:url(images/pay/perfect.png) 0 0 no-repeat;
+width:92px;
+height:19px;
+position:absolute;
+right:15px;
+top:10px;
+}
+
+#my_vklad_list .item .logo_payer{
+background:url(images/pay/payer.png) 0 0 no-repeat;
+width:81px;
+height:18px;
+position:absolute;
+right:15px;
+top:10px;
+}
+
+#my_vklad_list .item .logo_ego{
+background:url(images/pay/ego.png) 0 0 no-repeat;
+width:38px;
+height:19px;
+position:absolute;
+right:15px;
+top:10px;
+}
+
+#my_vklad_list .item .progress{
+clear:both;
+margin-top:10px;
+}
+
+#my_vklad_list .item .progress div{
+background-color:white;
+border:2px solid #e3dfdf;
+float:left;
+width:15px;
+height:10px;
+}
+
+#my_vklad_list .item .progress .t24.active{
+background-color:#ff9c00;
+}
+
+#my_vklad_list .item .progress .t48.active{
+background-color:#6ca40c;
+}
+
+#my_vklad_list .item .progress .t72.active{
+background-color:#ef2923;
+}
+
+#my_vklad_list .item .text_1,
+#my_vklad_list .item .text_2,
+#my_vklad_list .item .text_3{
+font-family:Arial;
+font-size:12.17px;
+color:#484848;
+float:left;
+width: 152px;
+text-align: center;
+margin-top:5px;
+}
+
+
+
+
+
+#lk_history{
+
+}
+
+#lk_history table{
+border: 1px solid #afafaf;
+border-collapse: collapse;
+width:100%;
+}
+
+#lk_history table td{
+padding:10px;
+text-align:center;
+border-left: 1px solid #afafaf;
+border-right: 1px solid #afafaf;
+border-collapse: collapse;
+font-family:Arial;
+font-size:13px;
+color:#3f3f3f;
+}
+
+#lk_history table th{
+text-align:center;
+padding:7px 10px;
+border-top: 1px solid #afafaf;
+border-bottom: 1px solid #afafaf;
+border-collapse: collapse;
+font-family:'PFBeauSansProSeBold';
+font-size:14px;
+color:#3f3f3f;
+}
+
+#lk_history table tr.active,
+#lk_history table tr.active td{
+background-color:#dadada;
+}
+
+#lk_history .put_in{
+font-family:'PFBeauSansProBold';
+font-size:14px;
+text-transform:uppercase;
+text-shadow: 0px 1px 1px white;
+float:left;
+margin:20px 0px 20px 10px;
+}
+
+#lk_history .put_in span{
+font-family:Verdana;
+font-size:16px;
+font-weight:bold;
+color:#ef2923;
+margin-left:5px;
+}
+
+
+
+
+
+#lk_partner{
+
+}
+
+#lk_partner .top{
+padding:15px;
+font-family:'PFBeauSansProSeBold';
+font-size:15px;
+color:#3f3f3f;
+}
+
+#lk_partner .top span{
+font-family:'PFBeauSansProBold';
+font-size:15px;
+font-weight:bold;
+color:#f01010;
+}
+
+#lk_partner input[type="button"] {
+background: url(images/lk/submit.png) 0 0 no-repeat;
+width: 154px;
+height: 35px;
+border: 0;
+cursor: pointer;
+font-family: 'PFBeauSansProSeBold';
+font-size: 15px;
+color: #e31b14;
+float: right;
+}
+
+#lk_partner input[type="button"]:hover,
+#lk_partner input[type="button"].active{
+background: url(images/lk/menu_li_hover.png) 0 0 no-repeat;
+background-size:154px 35px;
+}
+
+#lk_partner .put_in, #lk_partner .recd {
+font-family: 'PFBeauSansProBold';
+font-size: 14px;
+text-transform: uppercase;
+text-shadow: 0px 1px 1px white;
+float: left;
+margin: 10px 20px;
+}
+
+#lk_partner .recd{
+float:right;
+}
+
+#lk_partner .put_in span, #lk_partner .recd span {
+font-family: Verdana;
+font-size: 14px;
+font-weight: bold;
+color: #ef2923;
+margin-left: 5px;
+}
+
+#lk_partner .item{
+
+}
+
+#lk_partner .item a{
+display:block;
+height:49px;
+background-color:#e8e8e8;
+}
+
+#lk_partner .item.level2 a{
+background-color:#dadada;
+}
+
+#lk_partner .item a div{
+float:left;
+height:49px;
+}
+
+#lk_partner .item .zamok{
+background:url(images/lk/lock.png) center center no-repeat;
+width:40px;
+border-left:1px solid #cccdcd;
+border-right:1px solid #cccdcd;
+}
+
+#lk_partner .item.active .zamok{
+background:url(images/lk/unlock.png) center center no-repeat;
+}
+
+#lk_partner .item .level{
+font-family:Arial;
+font-size:13px;
+color:#3f3f3f;
+width:145px;
+border-right:1px solid #cccdcd;
+background:url(images/lk/krug1.png) 122px center no-repeat;
+line-height: 50px;
+text-indent: 19px;
+}
+
+#lk_partner .item.active .level{
+background:url(images/lk/krug2.png) 122px center no-repeat;
+}
+
+#lk_partner .item .email{
+width:181px;
+border-right:1px solid #cccdcd;
+}
+
+#lk_partner .item .people{
+font-family:Arial;
+font-size:13px;
+color:#3f3f3f;
+text-align:center;
+width:88px;
+border-right:1px solid #cccdcd;
+padding-top: 10px;
+height:39px;
+}
+
+#lk_partner .item .people span{
+color:#e30000;
+}
+
+
+
+#info_referral{
+background-color:white;
+width:100%;
+font-family:Arial;
+font-size:13px;
+color:#3f3f3f;
+}
+
+#info_referral div{
+text-align:center;
+font-weight:bold;
+text-transform:uppercase;
+padding:10px 0;
+float:left;
+border-top:1px solid #292929;
+border-bottom:1px solid #292929;
+border-right:1px solid #c1c1c1;
+height: 18px;
+}
+
+#info_referral .item_ref{
+height: auto;
+float: none;
+border: 0;
+padding: 0;
+}
+
+#info_referral .item_ref div{
+padding:8px 0;
+text-indent:11px;
+font-weight:normal;
+text-transform:none;
+text-align:left;
+border-top: 0;
+}
+
+#info_referral div.cl{
+float: none;
+padding: 0;
+height:auto;
+border: 0;
+}
+
+
+#reg_form{
+width: 480px;
+background-color: #e5e5e5;
+box-shadow: inset 0px -1px 1px #78797b;
+border-radius: 5px;
+margin-top:10px;
+padding:10px;
+font-family: 'PFBeauSansProBook';
+font-size: 18px;
+}
+
+#reg_form input[type="text"]{
+width: 290px;
+}
+
+#reg_form input[type="password"]{
+
+}
+
+#reg_form input[type="submit"]{
+background: url(images/reg_button.png) 0 0 no-repeat;
+width: 154px;
+height: 35px;
+border: 0;
+cursor: pointer;
+font-family: 'PFBeauSansProBoldItalic';
+font-size: 18px;
+color: white;
+text-shadow: 1px 1px 1px #8c080d;
+text-align: center;
+background-size: cover;
+float: left;
+margin-left: 70px;
+}
+
+#reg_form input[type="submit"]:hover{
+background: url(images/reg_button_hover.png) 0 0 no-repeat;
+background-size: cover;
+}
+
+#reg_form a:hover{
+text-decoration:underline;
+}
+
+#reg_form a.submit{
+background: url(images/vhod.png) 0 0 no-repeat;
+border: 0;
+width: 162px;
+height: 43px;
+cursor: pointer;
+margin-left: 10px;
+font-family: 'PFBeauSansProSeBold';
+font-size: 19.04px;
+color: white;
+text-shadow: 1px 1px 1px #957e00;
+display: block;
+line-height: 32px;
+float:left;
+}
+
+#reg_form a.submit:hover{
+background: url(images/vhod_hover.png) 0 0 no-repeat;
+}
+
+.ul_cifra{
+
+}
+
+.ul_cifra p{
+padding:0;
+margin:0;
+}
+
+.ul_cifra li{
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.ul_cifra li ul{
+margin-bottom: 10px;
+}
+
+.ul_cifra li ul li{
+padding-left: 20px;
+}
+
+.ul_cifra2 li{
+list-style-type:decimal;
+margin-left: 40px;
+margin-bottom: 20px;
+}
+
+.ul_cifra2 li a{
+text-decoration:underline;
+}
+
+#pagenavi{
+text-align:center;
+}
+
+#pagenavi span{
+font-size:16px;
+font-weight:bold;
+margin-right:5px;
+margin-left:5px;
+}
+
+#pagenavi a{
+margin-right:5px;
+margin-left:5px;
+font-size:14px;
+}
+
+
+.wpcf7 form{
+width: 480px;
+background-color: #e5e5e5;
+box-shadow: inset 0px -1px 1px #78797b;
+border-radius: 5px;
+margin-top: 10px;
+padding: 10px;
+font-family: 'PFBeauSansProBook';
+font-size: 18px;
+}
+
+.wpcf7 textarea{
+border-radius: 5px;
+border: 1px solid #cbcbcb;
+padding: 5px;
+width: 449px;
+resize:none;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="password"],
+.wpcf7 input[type="email"]{
+width:340px;
+}
+
+.wpcf7 input[type="submit"] {
+background: url(images/reg_button.png) 0 0 no-repeat;
+width: 154px;
+height: 35px;
+border: 0;
+cursor: pointer;
+font-family: 'PFBeauSansProBoldItalic';
+font-size: 18px;
+color: white;
+text-shadow: 1px 1px 1px #8c080d;
+text-align: center;
+background-size: cover;
+}
+
+.wpcf7 input[type="submit"]:hover{
+background: url(images/reg_button_hover.png) 0 0 no-repeat;
+background-size: cover;
+}
+
+.wpcf7 span.wpcf7-not-valid-tip{
+top: 1px;
+left: 10px;
+width: auto;
+}
+
+.wpcf7 div.wpcf7-validation-errors {
+margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+.bMethod_all{
+display:block;
+}
+
+.bMethod_bank,
+.bMethod_ibank,
+.bMethod_online{
+display:none;
+}
+
+
+
+
+
+#social{
+position: absolute;
+right: 0;
+top: 220px;
+width: 100px;
+height: 180px;
+font-family: 'PFBeauSansProSeBold';
+font-size: 17px;
+color: #464646;
+text-align: center;
+background-color: #e5e5e5;
+box-shadow: inset 0px -1px 1px #78797b;
+border-radius: 5px;
+padding-top: 15px;
+}
+
+#social #share42{
+position: static!important;
+margin: 0 auto!important;
+display: block;
+width: 32px;
+}
+
+#social .share42init{
+margin-top: 10px;
+}

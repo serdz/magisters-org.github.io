@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<rss version="2.0">
+<channel>
+<title>http://vinveste.ru/!</title>
+<link>http://http://vinveste.ru//</link>
+<description>RSS канал новостей http://vinveste.ru/</description>
+<image>
+	<url>http://http://vinveste.ru//images/88x31.gif</url>
+	<title>http://vinveste.ru/</title>
+	<link>http://http://vinveste.ru//</link>
+	<width>88</width>
+	<height>31</height>
+</image>
+<pubDate>Fri, 10 Apr 2015 23:04:27 +0200</pubDate>
+<item>
+<title>Старт проект 11.04.2015</title>
+<link>http://http://vinveste.ru//news/?id=2</link>
+<description>Наш проект успешно начал принимать вклады!Все вклады под 10% в сутки! Выплаты моментально!...</description>
+<pubDate>Fri, 10 Apr 2015 12:00:00 +0200</pubDate>
+</item>
+<item>
+<title>Мы открылись</title>
+<link>http://http://vinveste.ru//news/?id=1</link>
+<description>Наш проект успешно начал принимать вклады!Все вклады под 10% в сутки! Выплаты моментально!...</description>
+<pubDate>Mon, 06 Oct 2014 12:00:00 +0200</pubDate>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,1005 @@
+/*------------------------------------------------------------------------
+# "Hot Business" Joomla template - February, 2012
+# Copyright (C) 2012 HotThemes. All Rights Reserved.
+# License: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+# Author: HotJoomlaTemplates.com
+# Website: http://www.hotjoomlatemplates.com
+-------------------------------------------------------------------------*/
+
+/* basics */
+
+
+
+
+
+
+
+
+
+
+
+
+a:link,a:visited,a:hover {
+	text-decoration:none;
+}
+
+a:hover {
+	color:#000 !important;
+}
+
+a.readon:link,a.readon:visited,
+a.readmore:link,a.readmore:visited {
+}
+
+.logo_text, .logo_text a {
+	font-size:32px;
+	font-weight:bold;
+	line-height:70px;
+}
+
+.logo_text span {
+	font-size:32px;
+	font-weight:300;
+}
+
+.social_icons {
+	padding-top:18px;
+	text-align:right;
+}
+
+.social_icons a:link, .social_icons a:hover, .social_icons a:visited {
+	text-decoration:none;
+	border-bottom:none !important;
+}
+
+.social_icons img {
+	opacity:.5;
+	-webkit-transition: opacity 0.8s ease-in-out;
+	-moz-transition: opacity 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out;
+}
+
+.social_icons img:hover {
+	opacity:1;
+}
+
+.big_text {
+	font-size:16px;
+	line-height:24px;
+}
+
+.button1, .button2 {
+	color:#fff !important;
+	font-weight:bold;
+	width:150px;
+	text-align:center;
+	line-height:36px;
+	display:block;
+	float:left;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	text-transform:uppercase;
+	margin:15px 15px 0 0;
+	-webkit-transition: background 0.8s ease-in-out;
+	-moz-transition: background 0.8s ease-in-out;
+	-o-transition: background 0.8s ease-in-out;
+	transition: background 0.8s ease-in-out;
+}
+
+a.button1:hover {
+	background:#000;
+	color:#fff !important;	
+}
+
+a.button2:hover {
+	background:#000;
+	color:#fff !important;	
+}
+
+.buttonheading a {
+	border-bottom:none !important;
+}
+
+img {
+	border:0;
+}
+
+fieldset {
+	border:0;
+}
+
+hr {
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:1px dotted #ccc;
+	margin-bottom:20px;
+}
+
+.upper h1 {
+	font-size:40px;
+}
+
+h1 {
+	font-size:32px;
+	font-weight:bold;
+	margin:0 0 15px;
+	padding:0;
+	line-height:40px;
+}
+
+h2 {
+	font-size:24px;
+	font-weight:bold;
+	padding:6px 0;
+	margin:0;
+	text-decoration:none;
+	line-height:32px;
+}
+
+/* heading icons */
+
+ul.actions {
+	margin:0 !important;
+	padding:0 !important;
+}
+
+ul.actions li {
+	margin:0 !important;
+	padding:0 !important;
+	list-style:none;
+	float:right;
+	position:relative;
+	top:-30px;
+	width:25px;
+}
+
+/* acticle details */
+
+dl.article-info,
+dl.article-info dd {
+	padding:0;
+	margin:5px 0 0 0;	
+}
+
+dl.article-info dt.article-info-term {
+	display:none;
+}
+
+/* category name */
+
+dl.article-info dd.category-name,
+dl.article-info dd.category-name a:link,
+dl.article-info dd.category-name a:visited,
+dl.article-info dd.category-name a:hover,
+dl.article-info dd.create,
+dl.article-info dd.modified,
+dl.article-info dd.published,
+dl.article-info dd.createdby,
+dl.article-info dd.hits {
+	font-size:11px;
+	float:left;
+	padding-right:10px;
+}
+
+dl.article-info dd.createdby {
+	border-right:1px dotted #CCC;
+}
+
+dl.article-info dd.create {
+	padding-left:10px;
+}
+
+/* page navigation */
+
+.pagination ul {
+	margin:0 !important;
+	padding:0 !important;
+}
+
+.pagination li {
+	list-style:none;
+	float:left;
+	padding:0 15px 0 0 !important;
+	margin:0 !important;
+}
+
+ul.pagenav {
+	margin:0;
+	padding:0;
+}
+
+ul.pagenav li {
+	list-style:none;
+	float:left;
+	padding:0 15px 0 0 !important;
+	margin:0 !important;
+}
+
+/* multi-column layout */
+
+.row-separator {
+	clear:both;
+	display:block;
+	height:15px;
+}
+
+.cols-2 div.item {
+	width:46%;
+	float:left;
+	margin:0 3% 0 0;
+}
+
+.cols-3 div.item {
+	width:31%;
+	float:left;
+	margin:0 2% 0 0;
+}
+
+.cols-4 div.item {
+	width:23%;
+	float:left;
+	margin:0 2% 0 0;
+}
+
+/* category list layout */
+
+table.category {
+	width:100%;
+}
+
+.category th {
+	color:#eee;
+	font-weight:700;
+	padding:5px;
+	text-align:left;
+	border-bottom:1px dotted #cccccc;
+}
+
+.cat-list-row0 td {
+	padding:5px;
+	text-align:left;
+}
+
+.cat-list-row1 td {
+	padding:5px;
+	text-align:left;
+	background:#f8f8f8;
+}
+
+.category .list-title {
+	width:50%;
+}
+
+.category .list-date {
+	width:20%;
+}
+
+.category .list-author {
+	width:20%;
+}
+
+.category .list-hits {
+	width:10%;
+}
+
+.category td.hits {
+	text-align:center;
+}
+
+/* contacts category layout */
+
+.category .item-title {
+	width:20%;
+}
+
+.category td.item-title a:link,
+.category td.item-title a:visited,
+.category td.item-title a:hover {
+	text-decoration:underline;
+}
+
+.category .item-position {
+	width:20%;
+}
+
+.category .item-phone {
+	width:20%;
+}
+
+.category .item-suburb {
+	width:20%;
+}
+
+.category .item-state {
+	width:20%;
+}
+
+/* contact form */
+
+#contact-form dl dd {
+	padding-bottom:10px;
+}
+
+#contact-form dl dt {
+	width:100px;
+	float:left;
+	padding-bottom:10px;
+}
+
+div.pane-slider {
+	background:none;
+}
+
+.jicons-icons img {
+	float:left;
+}
+
+.jicons-icons img {
+	float:left;
+	margin-right:10px;
+}
+
+address span.contact-street {
+	padding:0 8px 0 0;
+	display:block;
+}
+
+address span.contact-suburb,
+address span.contact-state,
+address span.contact-postcode,
+address span.contact-country {
+	padding:0 8px 0 25px;
+	display:block;
+}
+
+.contact-email label {
+	display:block;
+	float:left;
+	width:100px;
+}
+
+.contact-email .inputbox {
+	margin-bottom:10px;
+}
+
+.contact-email .button {
+	margin-top:30px;
+}
+
+#jform_contact_message {
+	width:320px;
+}
+
+input {
+	border:1px solid #999;
+}
+
+/* pane toggler */
+
+.pane-toggler-down, .pane-toggler {
+	background:#f8f8f8;
+	padding:5px 20px;
+}
+
+.pane-sliders .content {
+	padding:0 20px;
+}
+
+.article_author {
+	font-size:11px;
+	padding:0 5px 0 2px;
+	border-right:1px dotted #ccc;
+}
+
+.article_date {
+	font-size:11px;
+	padding-left:5px;
+}
+
+.small {
+	font-size:11px;
+}
+
+span.pagenav {
+	background:#cecece;
+	color:#fff;
+	padding:4px 12px;
+	text-transform:uppercase;
+}
+
+a.pagenav {
+	color:#fff !important;
+	padding:4px 12px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+.rapid_contact .intro_text {
+	font-size:18px;
+	font-weight:bold;
+	padding-bottom:15px;
+}
+
+.inputbox, textarea.rapid_contact, #jform_contact_name, #jform_contact_email, #jform_contact_emailmsg, #jform_contact_message {
+	border:1px solid #cacaca;
+	padding:4px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	box-shadow:0px 0px 5px #ddd;
+}
+
+.search .inputbox {
+	color:#fff;
+	padding:6px;
+	background:url("../images/content_bg2.png"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/content_bg2.png*/);
+	border:none;
+}
+
+.button {
+	color:#fff;
+	border:none;
+	padding:0 10px;
+	font-size:13px;
+	line-height:20px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.rapid_contact .button {
+	padding:3px 0;
+	margin:15px 0;
+}
+
+table.searchinto {
+	width:100%;
+}
+
+form {
+	margin:0;
+	padding:0;
+}
+
+.article_column {
+	padding:0 15px 0 0;
+}
+
+.article_separator {
+	height:10px;
+	display:block;
+}
+
+/* lists */
+
+ol {
+	margin-left:35px;
+	padding-left:7px;
+}
+
+ol li {
+	padding-left:0;
+	padding-top:0;
+	padding-bottom:5px;
+}
+
+li ol {
+	padding-top:5px;
+}
+
+ul.checklist {
+	padding:0 !important;
+	margin:0 0 0 15px;
+}
+
+ul.checklist li {
+	background:url("../images/icon_checklist.png"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/icon_checklist.png*/) no-repeat;
+	padding:0 0 0 22px !important;
+	margin:0 0 5px 0 !important;
+	list-style:none;
+}
+
+ul.arrow {
+	padding:0 !important;
+	margin:0 0 0 15px;
+}
+
+ul.arrow li {
+	background:url("../images/icon_arrow.png"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/icon_arrow.png*/) no-repeat;
+	padding:0 0 0 22px !important;
+	margin:0 0 5px 0 !important;
+	list-style:none;
+}
+
+ul.star {
+	padding:0 !important;
+	margin:0 0 0 15px;
+}
+
+ul.star li {
+	background:url("../images/icon_star.png"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/icon_star.png*/) no-repeat;
+	padding:0 0 0 22px !important;
+	margin:0 0 5px 0 !important;
+	list-style:none;
+}
+
+/* menu */
+
+ul.menu {
+	margin:0;
+	padding:0;
+}
+
+ul.menu li {
+	margin:0;
+	list-style:none;
+	padding:0;
+}
+
+ul.menu li a:link, ul.menu li a:visited {
+	text-decoration:none;
+	font-weight:normal;
+	line-height:20px;
+}
+
+ul.menu li ul {
+	margin:0;
+	padding:0;
+	display:block;
+}
+
+#column_left li.active > a:link,#column_left li.active > a:visited,
+#column_right li.active > a:link,#column_right li.active > a:visited {
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+    padding:5px 15px;
+    margin:5px 0;
+    display:block;
+}
+
+#column_left li a:link,#column_left li a:visited,
+#column_right li a:link,#column_right li a:visited {
+    padding:3px 15px;
+    display:block;
+}
+
+#column_left li.active ul li a:link,#column_left ul li li.active a:visited,
+#column_right li.active ul li a:link,#column_right li.active ul li a:visited {
+    background:none;
+	border-radius:5px;
+    padding:0 30px;
+    margin:0;
+    display:block;
+	font-size:11px;
+}
+
+#column_left ul.menu img,
+#column_right ul.menu img {
+	margin:0 5px;
+}
+
+.footer ul.menu {
+	margin:0;
+	padding:0;
+}
+
+.footer ul.menu li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.footer ul.menu li a:link,.footer ul.menu li a:visited, .footer ul.menu li a:hover {
+	text-decoration:none;
+	display:block;
+	padding:0;
+	font-weight:normal;
+}
+
+.footer ul.menu li a:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+
+.footer2 a:link,.footer2 a:visited {
+	color:#fff;
+}
+
+.footer3 ul,
+.topPanelModules ul {
+	padding:0;
+	margin:0;
+	float:none;
+	list-style:none;	
+}
+
+.footer3 ul.menu li, .topPanelModules ul.menu li {
+	list-style:none;
+	padding:0 0 0 22px;
+	margin:0;
+	border:none;
+}
+
+.footer3 ul.menu li:hover, .topPanelModules ul.menu li:hover {
+}
+
+.footer3 ul.menu a:link, .footer3 ul.menu a:visited {
+	font-size:11px;
+	padding:0;
+}
+
+.footer3 ul.menu a:hover {
+	color:#ff6816;
+}
+
+.footer4 ul {
+	padding:0;
+	margin:5px 0 0 0;
+	float:none;
+	list-style:none;	
+}
+
+.footer4 ul.menu li {
+	float:left;
+	list-style:none;
+	padding:0 10px 0 0;
+	margin:0;
+	border:none;
+}
+
+.footer4 ul.menu li a:link, .footer4 ul.menu li a:visited {
+	text-decoration:none;
+}
+
+#column_left ul.menu li, #column_right ul.menu li {
+	background:none;
+}
+
+/* top menu */
+
+#nav, #nav ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	list-style-position:outside;
+	position:absolute;
+	z-index:10000;
+}
+
+#nav ul {
+	display:none;
+}
+
+#nav a {
+	display:block;
+	padding:3px 15px;
+	text-decoration:none;
+	font-size:13px;
+	border-bottom:none;
+	font-weight:bold;
+}
+
+#nav > li {
+	margin-right:10px !important;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	-webkit-transition: background 0.8s ease-in-out;
+	-moz-transition: background 0.8s ease-in-out;
+	-o-transition: background 0.8s ease-in-out;
+	transition: background 0.8s ease-in-out;
+	
+}
+
+#nav li:hover > ul {
+	background:url("../images/topmenu_bg.png"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/topmenu_bg.png*/) no-repeat;
+	border-bottom:1px solid #7f7f7f;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	-o-border-radius:8px;
+	border-radius:8px;
+}
+
+#nav li:hover > ul ul {
+	background:url("../images/topmenu_bg2.png"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/topmenu_bg2.png*/) no-repeat;
+	border-bottom:1px solid #7f7f7f;
+	padding:20px 0px 15px 15px;
+	width:231px;
+}
+
+#nav > li.active a:hover {
+	padding:3px 15px;
+}
+
+#nav li:hover ul a {
+	background:none;
+	padding:5px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#nav li:hover ul li a:hover {
+	border:none;
+	position:relative;
+	padding:5px;
+}
+
+#nav li#current ul li a, #nav li.active ul li a {
+	border:none;
+	position:relative;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#nav li {
+	float:left;
+	position:relative;
+	margin:0;
+}
+
+#nav li ul li, #nav li ul li ul {
+	margin:0;
+	padding:0;
+	float:none;
+	cursor:pointer;
+}
+
+#nav li ul a {
+	width:206px;
+	line-height:normal;
+	padding:7px;
+}
+
+#nav li ul {
+	padding:30px 15px 15px 15px;	
+}
+
+#nav li ul ul {
+	left:216px;
+	margin:0;
+}
+
+#nav li:hover ul ul,#nav li:hover ul ul ul,#nav li:hover ul ul ul ul {
+	display:none;
+}
+
+#nav li:hover ul,#nav li li:hover ul,#nav li li li:hover ul,#nav li li li li:hover ul {
+	display:block;
+}
+
+#nav ul li a {
+	font-size:12px;
+	font-weight:normal;
+	text-transform:none;
+}
+
+#nav ul ul {
+	top:0px;
+	z-index:10000;
+}
+
+#nav li#current span {
+	text-transform:none;
+}
+
+#nav > li#current span {
+	text-transform:uppercase;
+}
+
+#nav img {
+	margin-right:5px;	
+}
+
+.image-title {
+	line-height:18px;
+}
+
+#nav li img {
+	float:left;
+}
+
+/* modules */
+
+div.moduletable, div.moduletable_contact {
+	padding:0;
+}
+
+.gallery div.moduletable {
+	padding:0;
+}
+
+div.moduletable h3, div.moduletable_contact h3 {
+	font-size:24px;
+	margin:0;
+	padding:15px 0 5px;
+	font-weight:bold;
+	line-height:30px;
+}
+
+#column_left div.moduletable, #column_right div.moduletable,
+#column_left div.moduletable_contact, #column_right div.moduletable_contact {
+	background:#f9f9f9;
+	border:1px solid #ddd;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	padding:15px 0;
+}
+
+#column_left div.moduletable_contact, #column_right div.moduletable_contact {
+	background:#fff url("../images/contact_bg.png"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/contact_bg.png*/) no-repeat top right;
+}
+
+#column_left div.moduletable h3, #column_right div.moduletable h3,
+#column_left div.moduletable_contact h3, #column_right div.moduletable_contact h3 {
+	padding-left:14px;	
+}
+
+#column_left div.moduletable > div, #column_right div.moduletable > div,
+#column_left div.moduletable_contact > div, #column_right div.moduletable_contact > div {
+	padding:0 15px;
+}
+
+.bottom div.moduletable h3 {
+	margin:0;
+	padding-top:0;
+	font-weight:normal;
+}
+
+.footer div.moduletable h3 {
+	background:none;
+	padding:15px 0;
+}
+
+.moduletable ul {
+	margin:0;
+	padding:0;	
+}
+
+.moduletable li {
+	margin:0 0 0 15px;
+	padding:3px 0;
+}
+
+.topPanelModules div.moduletable h3 {
+	background:none;
+	padding-left:0;	
+}
+
+.breadcrumbs {
+	padding:13px 45px;
+	display:block;
+}
+
+#form-login li {
+	list-style:none;
+}
+
+.hotcarousel {
+	padding-top:30px;
+}
+
+/* typography */
+
+.warning {
+	padding:15px 15px 15px 60px;
+	color:#000;
+	border-top:4px solid #c10000;
+	border-bottom:4px solid #c10000;
+	background:#FFDE25 url("../images/warning.png"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/warning.png*/) no-repeat center left;
+}
+
+.info {
+	padding:15px 15px 15px 60px;
+	color:#006699;
+	border-top:4px solid #006699;
+	border-bottom:4px solid #006699;
+	background:#bde1ff url("../images/info.png"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/info.png*/) no-repeat center left;
+}
+
+.error {
+	padding:15px 15px 15px 60px;
+	color:#900;
+	border-top:4px solid #900;
+	border-bottom:4px solid #900;
+	background:#f8b5b5 url("../images/error.png"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/error.png*/) no-repeat center left;
+}
+
+.code {
+	padding:15px 0;
+	color:#218023;
+	font-family:"Courier New", Courier, monospace;
+	font-size:14px;
+}
+
+.hotquote {
+	font-style:italic;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	line-height:normal;
+}
+
+.home_pic {
+	float:left;
+	margin-right:10px;
+}
+
+.carousel_pic {
+	float:right;
+	margin:5px 0 0 30px;	
+}
+
+.sponsor {
+	padding:0;
+}
+
+.sponsor a {
+	border-bottom:none !important;
+}
+
+.sponsor_img {
+	margin:0 17px 10px 0;
+	border:1px solid #ccc;
+	-webkit-transition: opacity 0.8s ease-in-out;
+	-moz-transition: opacity 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out;
+	opacity:0.6;
+}
+
+.sponsor_img:hover {
+	opacity:1;
+}
+
+.last_img {
+	margin:0 0 10px 0;
+}
+
+/* top panel */
+
+#top-panel {
+	padding:14px 20px;
+	display:none;
+}
+
+#sub-panel {
+	text-align:center;
+	background:#000;
+}
+
+#sub-panel a {
+	width:200px;
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	margin:0 auto;
+	font-weight:normal;
+	font-size:11px;
+	text-transform:uppercase;
+	border-bottom:none !important;
+}
+
+#sub-panel a:hover {
+	color:#ccc !important;	
+}
+
+#sub-panel a span {
+	padding:4px 0;
+	display:block;
+}
+
+.topPanelModules {
+	margin:0 auto;
+}
+
+p.copyright {
+	margin: 0;
+	padding: 0;
+}

@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+  <xbasehref="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-39-43/hot-joomla-carousel" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Super User" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Hot Joomla Carousel</title>
+  <link rel="stylesheet" href="../../modules/mod_hot_joomla_carousel/tmpl/hot_joomla_carousel.css" tppabs="http://demo.hotjoomlatemplates.com/business/modules/mod_hot_joomla_carousel/tmpl/hot_joomla_carousel.css" type="text/css" />
+  <style type="text/css">
+
+
+.hotcarousel img {
+	border:1px solid #DDDDDD;
+	margin:0 5px;
+	padding:2px;
+}
+
+.hotcarousel .js {
+	overflow:hidden;
+	width:935px;
+	height:200px;
+}
+
+.hotcarousel .carousel-next {
+	background: url("../../modules/mod_hot_joomla_carousel/images/circleright32.png"/*tpa=http://demo.hotjoomlatemplates.com/business/modules/mod_hot_joomla_carousel/images/circleright32.png*//*tpa=http://demo.hotjoomlatemplates.com/business/modules/mod_hot_joomla_carousel/images/circleright32.png*/) 0 84px no-repeat;float:left;
+}
+
+.hotcarousel .carousel-previous {
+	background: url("../../modules/mod_hot_joomla_carousel/images/circleleft32.png"/*tpa=http://demo.hotjoomlatemplates.com/business/modules/mod_hot_joomla_carousel/images/circleleft32.png*//*tpa=http://demo.hotjoomlatemplates.com/business/modules/mod_hot_joomla_carousel/images/circleleft32.png*/) 0 84px no-repeat;float:left;
+}
+
+.hotcarousel .carousel-control{height:200px;}
+
+
+  </style>
+  <script src="../../media/system/js/mootools-core.js" tppabs="http://demo.hotjoomlatemplates.com/business/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="../../media/system/js/core.js" tppabs="http://demo.hotjoomlatemplates.com/business/media/system/js/core.js" type="text/javascript"></script>
+  <script src="../../media/system/js/caption.js" tppabs="http://demo.hotjoomlatemplates.com/business/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="../../media/system/js/mootools-more.js" tppabs="http://demo.hotjoomlatemplates.com/business/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+  </script>
+
+
+
+
+<link rel="stylesheet" href="../../templates/hot_business/css/template_css.css" tppabs="http://demo.hotjoomlatemplates.com/business/templates/hot_business/css/template_css.css" type="text/css" />
+<link rel="stylesheet" href="../../templates/hot_business/css/layout.css" tppabs="http://demo.hotjoomlatemplates.com/business/templates/hot_business/css/layout.css" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	font-size:13px;
+	color:#666666;
+}
+
+a:link,a:visited {
+	color:#cd9c00;
+}
+
+.button {
+	background:#cd9c00;
+}
+
+.button1 {
+	background:#0f202f;
+}
+
+.button2 {
+	background:#cd9c00;
+}
+
+.inputbox:focus, textarea.rapid_contact:focus {
+	box-shadow:0px 0px 5px #cd9c00;
+}
+
+.sectiontableheader {
+	border-bottom:1px dotted #cd9c00;
+}
+
+.header_wrap {
+	height:70px;
+	margin:0 auto;
+	background: #0e202f; /* Old browsers */
+	background: -moz-linear-gradient(top, #0e202f 0%, #0e202f 50%, #162c3e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e202f), color-stop(50%,#0e202f), color-stop(100%,#162c3e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #0e202f 0%,#0e202f 50%,#162c3e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #0e202f 0%,#0e202f 50%,#162c3e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #0e202f 0%,#0e202f 50%,#162c3e 100%); /* IE10+ */
+	background: linear-gradient(top,  #0e202f 0%,#0e202f 50%,#162c3e 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e202f', endColorstr='#162c3e',GradientType=0 ); /* IE6-8 */
+}
+
+.logo_text, .logo_text a, .logo_text span {
+	color:#FFFFFF !important;
+}
+
+.header,#topmenu_wrap2,.gallery,.upper,.main_area,.bottom,.footer,.footer2,.footer3,.footer4,.topPanelModules {
+	width:1000px;
+}
+
+
+.upper_wrap {
+	background: #b0b0af; /* Old browsers */
+	background: -moz-linear-gradient(top, #b0b0af 40%, #FFFFFF 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(40%,#b0b0af), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #b0b0af 40%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #b0b0af 40%,#FFFFFF 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #b0b0af 40%,#FFFFFF 100%); /* IE10+ */
+	background: linear-gradient(top,  #b0b0af 40%,#FFFFFF 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0b0af', endColorstr='#FFFFFF',GradientType=0 ); /* IE6-8 */
+}
+
+#content_wrap {
+	width:680px;
+}
+
+#column_left {
+	width:320px;
+    margin-right:0px;
+}
+
+#column_right {
+	width:0px;
+    margin-left:0px;
+}
+
+.componentheading, h1 {
+	color:#1f3346;
+}
+
+.contentheading, h2, h3, h4, .contentheading a, h2 a {
+	color:#595e5d !important;
+}
+
+h2 a:hover {
+	color:#333333;
+}
+
+#column_right div.moduletable, #column_right div.moduletable_contact,
+#column_left div.moduletable, #column_left div.moduletable_contact {
+    color:#666666;
+}
+
+div.moduletable h3, div.moduletable_contact h3 {
+	color:#13597E;
+}
+
+#topmenu_wrap {
+	border-top:1px solid #3a4b5c;
+	background: #1f3346; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1f3346 0%, #3a4b5c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1f3346), color-stop(100%,#3a4b5c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1f3346 0%,#3a4b5c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1f3346 0%,#3a4b5c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1f3346 0%,#3a4b5c 100%); /* IE10+ */
+	background: linear-gradient(top,  #1f3346 0%,#3a4b5c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f3346', endColorstr='#3a4b5c',GradientType=0 ); /* IE6-8 */
+}
+
+#nav li a {
+    color:#b0b0af;
+}
+
+#nav > li {
+	border:1px solid #1f3346;
+}
+
+#nav > li#current, #nav > li.active, #nav > li:hover {
+	background:#cd9c00;
+    color:#FFFFFF !important;
+}
+
+#nav > li:hover a {
+	color:#FFFFFF !important;
+}
+
+#nav > li a:hover, #nav > li.active > a {
+    color:#FFFFFF !important;
+}
+
+#nav li.active ul li a,
+#nav li ul li a,
+#nav li:hover ul li a {
+	color:#000000 !important;
+}
+
+#nav li:hover ul li a:hover,
+#nav li.active ul li a:hover,
+#nav li ul li#current a:hover {
+    color:#13597E !important;
+}
+
+#nav li ul li {
+	border:none;
+}
+
+ul.menu li a:link,ul.menu li a:visited,
+ul.newsfeed li a:link, ul.newsfeed li a:visited {
+	color:#666666;
+}
+
+ul.menu li a:hover,
+ul.newsfeed li a:hover {
+	color:#1f3346 !important;
+}
+
+#column_left li.active a:link,#column_left li.active a:visited,
+#column_right li.active a:link,#column_right li.active a:visited {
+	color:#FFFFFF !important;
+}
+
+#column_left li.active ul li a:link,#column_left li.active ul li a:visited,
+#column_right li.active ul li a:link,#column_right li.active ul li a:visited {
+	color:#666666 !important;
+}
+
+#column_left li.active > a:link,#column_left li.active > a:visited,
+#column_right li.active > a:link,#column_right li.active > a:visited {
+    background:#1f3346;
+}
+
+.footer_copyright1, .footer_copyright1 a:link, .footer_copyright1 a:visited,
+.footer_copyright2, .footer_copyright2 a:link, .footer_copyright2 a:visited {
+	color:#1f3346;
+}
+
+.upper .module_padding {
+	width:0px;
+}
+
+.upper h1 {
+	color:#1f3246 !important;
+    text-shadow:1px 1px 0px #eee;
+}
+
+.bottom .module_padding {
+	width:1000px;
+}
+
+.footer_wrap {
+	background:#1f3346;
+}
+
+.footer_wrap2, .footer_wrap2_bottom {
+	background-color:#3F2323;
+}
+
+.footer .module_padding {
+	width:220px;
+    background:none;
+}
+
+.footer2 .module_padding {
+	width:0px;
+    background:none;
+}
+
+.footer3 .module_padding {
+	width:0px;
+    background:none;
+}
+
+.footer div.moduletable h3, .footer div.moduletable a:link, .footer div.moduletable a:visited {
+	color:#13597E;
+}
+
+.footer div.moduletable {
+	color:#333333;
+}
+
+.footer ul.menu li a:link,.footer ul.menu li a:visited, .footer ul.menu li a:hover {
+	color:#b0b0af !important;
+}
+
+.footer2 div.moduletable h3, .footer2 div.moduletable a:link, .footer2 div.moduletable a:visited {
+	color:#FFFFFF;
+}
+
+.footer2 div.moduletable {
+	color:#BBBBBB;
+}
+
+.footer3 div.moduletable h3 {
+	color:#155A80;
+}
+
+.footer3 div.moduletable, .footer3 div.moduletable ul.menu li a:link, .footer3 div.moduletable ul.menu li a:visited {
+	color:#b0b0af;
+}
+
+.footer_wrap4 {
+	background:#0e202f;
+}
+
+.footer4 ul.menu li a:link, .footer4 ul.menu li a:visited, .footer4 ul.menu li a:hover {
+	color:#1f3346 !important;
+}
+
+.topPanelModules .module_padding {
+	width:0px;
+    background:none;
+}
+
+.upper,.upper p,.upper div,.upper a:link,.upper a:visited {
+	color:#000000;
+}
+
+.bottom,.bottom p,.bottom div {
+	color:#333333;
+}
+
+.upper div.moduletable h3,
+.upper div.moduletable h3 span {
+	color:#1f3246;
+}
+
+.bottom div.moduletable h3,
+.bottom div.moduletable h3 span {
+	color:#13597E;
+}
+
+ul.menu li a:link,ul.menu li a:visited,
+ul.newsfeed li a:link, ul.newsfeed li a:visited,
+.header_menu a,
+.footer ul.menu li a:link,.footer ul.menu li a:visited,
+.moduletable {
+	font-size:13px;
+}
+
+.moduletable .contentpaneopen,
+.moduletable .article_separator {
+	background:url("../../templates/hot_business/images/bg_transparent_black.png"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/bg_transparent_black.png*//*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/bg_transparent_black.png*/);
+}
+
+a.pagenav {
+	background:#595e5d;
+}
+
+#top-panel {
+	background:#000000;
+	border-bottom:3px solid #000000;
+}
+
+.topPanelModules div.moduletable h3,.topPanelModules div.moduletable h3 span {
+	color:#FFFFFF;
+}
+
+.topPanelModules div.moduletable {
+	color:#FFFFFF;
+}
+
+.topPanelModules ul.menu li a:link,.topPanelModules ul.menu li a:visited,
+.topPanelModules div.moduletable a:link, .topPanelModules div.moduletable a:visited, .topPanelModules div.moduletable a:hover {
+	color:#92C2DD !important;
+}-->
+</style>
+
+<!--[if lt IE 9]>
+<style type="text/css">
+.upper_wrap {
+	-pie-background: linear-gradient(#b0b0af, #FFFFFF);
+	behavior: url("../../templates/hot_business/css/PIE.php"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/css/PIE.php*//*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/css/PIE.php*/);
+}
+
+.header_wrap {
+	-pie-background: linear-gradient(#0e202f, #162c3e);
+	behavior: url("../../templates/hot_business/css/PIE.php"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/css/PIE.php*//*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/css/PIE.php*/);
+}
+
+#topmenu_wrap {
+	-pie-background: linear-gradient(#1f3346, #3a4b5c);
+	behavior: url("../../templates/hot_business/css/PIE.php"/*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/css/PIE.php*//*tpa=http://demo.hotjoomlatemplates.com/business/templates/hot_business/css/PIE.php*/);
+}
+</style>
+<![endif]-->
+
+<script type="text/javascript" src="../../templates/hot_business/js/jquery.min.js" tppabs="http://demo.hotjoomlatemplates.com/business/templates/hot_business/js/jquery.min.js"></script>
+<script type="text/javascript">
+     jQuery.noConflict();
+</script>
+
+
+<!-- top menu -->
+<script type="text/javascript">
+function mainmenu(){
+jQuery("#nav ul").css({display: "none"}); // Opera Fix
+jQuery("#nav li").hover(function(){
+		jQuery(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown('fast');
+		},function(){jQuery(this).find('ul:first').css({visibility: "hidden"});	});}
+jQuery(document).ready(function(){ mainmenu();});
+</script>
+
+<!-- featured module background -->
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery('div.module_padding').has('div.moduletable_featured').addClass('featured_bg');
+});
+</script>
+
+
+<!-- reflection -->
+<script type="text/javascript" src="../../templates/hot_business/js/reflection.js" tppabs="http://demo.hotjoomlatemplates.com/business/templates/hot_business/js/reflection.js"></script>
+
+<!-- scrollTo -->
+<link rel="stylesheet" href="../../templates/hot_business/css/scrollTo.css" tppabs="http://demo.hotjoomlatemplates.com/business/templates/hot_business/css/scrollTo.css" type="text/css" />
+<script type="text/javascript" src="../../templates/hot_business/js/scrollTo.js" tppabs="http://demo.hotjoomlatemplates.com/business/templates/hot_business/js/scrollTo.js"></script>
+
+</head>
+<body>
+<div class="main_container">
+    <div class="header_wrap">
+    	<div class="header">
+            <div class="logo">
+                <div class="logo_pad">
+                    
+
+<div class="custom"  >
+	<div class="logo_text"><a href="../../index.php.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php"><span>HOT</span>BUSINESS</a></div></div>
+
+                </div>
+            </div>
+            <div class="header_menu">
+                
+
+<div class="custom"  >
+	<div class="social_icons"><a href="javascript:if(confirm('http://www.linkedin.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.linkedin.com/'" tppabs="http://www.linkedin.com/"><img src="../../images/stories/linkedin.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/linkedin.png" alt="linkedin" /></a> <a href="javascript:if(confirm('http://twitter.com/hotjoomla  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://twitter.com/hotjoomla'" tppabs="http://twitter.com/hotjoomla"><img src="../../images/stories/twitter.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/twitter.png" alt="twitter" /></a> <a href="javascript:if(confirm('http://www.facebook.com/hotjoomla  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.facebook.com/hotjoomla'" tppabs="http://www.facebook.com/hotjoomla"><img src="../../images/stories/facebook.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/facebook.png" alt="facebook" /></a> <a href="#"><img src="../../images/stories/rss.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/rss.png" alt="rss" /></a></div></div>
+
+            </div>
+        </div>
+    </div>
+        <div id="topmenu_wrap">
+    	<div id="topmenu_wrap2">
+            <div id="topmenu">
+                <div id="topmenu_pad">
+                    
+<ul class="menu" id="nav">
+<li class="item-102"><a href="../../index.htm" tppabs="http://demo.hotjoomlatemplates.com/business/" >Home Page</a></li><li class="item-103 deeper parent"><a href="javascript:;" >Styles</a><ul><li class="item-104"><a href="../../index.php-style=1.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php?style=1" ><img src="../../images/stories/menu_icon_1.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/menu_icon_1.png" alt="Style 1" /><span class="image-title">Style 1</span> </a></li><li class="item-105"><a href="../../index.php-style=2.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php?style=2" ><img src="../../images/stories/menu_icon_2.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/menu_icon_2.png" alt="Style 2" /><span class="image-title">Style 2</span> </a></li><li class="item-106"><a href="../../index.php-style=3.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php?style=3" ><img src="../../images/stories/menu_icon_3.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/menu_icon_3.png" alt="Style 3" /><span class="image-title">Style 3</span> </a></li><li class="item-107"><a href="../../index.php-style=4.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php?style=4" ><img src="../../images/stories/menu_icon_4.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/menu_icon_4.png" alt="Style 4" /><span class="image-title">Style 4</span> </a></li><li class="item-169"><a href="../../index.php-style=5.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php?style=5" ><img src="../../images/stories/menu_icon_5.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/menu_icon_5.png" alt="Style 5" /><span class="image-title">Style 5</span> </a></li></ul></li><li class="item-108 deeper parent"><a href="../features.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features" >Features</a><ul><li class="item-109"><a href="../features.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features" >Template Features</a></li><li class="item-110"><a href="../features/module-positions.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/module-positions" >Module Positions</a></li><li class="item-111"><a href="../features/infinite-colors.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/infinite-colors" >Infinite Colors</a></li><li class="item-112"><a href="../features/flexible-widths.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/flexible-widths" >Flexible Widths</a></li><li class="item-181 deeper parent"><a href="javascript:;" >Addon Features</a><ul><li class="item-113"><a href="../features/2011-09-01-10-53-23/hot-menu.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/2011-09-01-10-53-23/hot-menu" >Hot Menu</a></li><li class="item-117"><a href="../features/2011-09-01-10-53-23/top-panel.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/2011-09-01-10-53-23/top-panel" >Top Panel</a></li><li class="item-116"><a href="../features/2011-09-01-10-53-23/reflection-effect.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/2011-09-01-10-53-23/reflection-effect" >Reflection Effect</a></li></ul></li><li class="item-114"><a href="../features/no-conflicts.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/no-conflicts" >No Conflicts</a></li><li class="item-129"><a href="../features/typography.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/typography" >Typography</a></li><li class="item-115"><a href="../features/seo-friendly.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/seo-friendly" >SEO Friendly</a></li></ul></li><li class="item-118 active deeper parent"><a href="javascript:;" >Extensions</a><ul><li class="item-121 current active"><a href="hot-joomla-carousel.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-39-43/hot-joomla-carousel" ><img src="../../images/stories/ext_mod.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/ext_mod.png" alt="Hot Joomla Carousel" /><span class="image-title">Hot Joomla Carousel</span> </a></li><li class="item-120"><a href="hot-joomla-gallery.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-39-43/hot-joomla-gallery" ><img src="../../images/stories/ext_mod.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/ext_mod.png" alt="Hot Joomla Gallery" /><span class="image-title">Hot Joomla Gallery</span> </a></li></ul></li><li class="item-122 deeper parent"><a href="javascript:;" >Joomla</a><ul><li class="item-123"><a href="../2011-04-19-08-41-50/blog.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-41-50/blog" ><img src="../../images/stories/menu_icon_blog.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/menu_icon_blog.png" alt="Blog" /><span class="image-title">Blog</span> </a></li><li class="item-124"><a href="../2011-04-19-08-41-50/search.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-41-50/search" ><img src="../../images/stories/menu_icon_search.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/menu_icon_search.png" alt="Search" /><span class="image-title">Search</span> </a></li><li class="item-125"><a href="../2011-04-19-08-41-50/category-list.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-41-50/category-list" ><img src="../../images/stories/menu_icon_faq.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/menu_icon_faq.png" alt="Category List" /><span class="image-title">Category List</span> </a></li><li class="item-126"><a href="../2011-04-19-08-41-50/contact.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-41-50/contact" ><img src="../../images/stories/menu_icon_contact.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/menu_icon_contact.png" alt="Contact" /><span class="image-title">Contact</span> </a></li><li class="item-127"><a href="../2011-04-19-08-41-50/newsfeeds.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-41-50/newsfeeds" ><img src="../../images/stories/menu_icon_news.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/menu_icon_news.png" alt="Newsfeeds" /><span class="image-title">Newsfeeds</span> </a></li><li class="item-128"><a href="../2011-04-19-08-41-50/web-links.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-41-50/web-links" ><img src="../../images/stories/menu_icon_link.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/menu_icon_link.png" alt="Web Links" /><span class="image-title">Web Links</span> </a></li></ul></li><li class="item-130 deeper parent"><a href="javascript:;" >How To Install</a><ul><li class="item-132"><a href="../2011-04-19-08-48-51/hotstart-with-demo.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-48-51/hotstart-with-demo" >HotStart (with demo)</a></li><li class="item-131"><a href="../2011-04-19-08-48-51/basic-installation-no-demo.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-48-51/basic-installation-no-demo" >Basic Installation (no demo)</a></li></ul></li></ul>
+
+                </div>
+            </div>
+            <div class="register">
+                <div class="register_pad">
+                    
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+                <div class="gallery_wrap">
+        <div class="gallery">
+            		<div class="moduletable">
+					
+
+<script type="text/javascript" src="../../modules/mod_hot_joomla_carousel/js/jquery.carousel.js" tppabs="http://demo.hotjoomlatemplates.com/business/modules/mod_hot_joomla_carousel/js/jquery.carousel.js"></script>
+<script type="text/javascript">
+    jQuery(function(){
+        jQuery("http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-39-43/div.foo").carousel({
+			direction: "horizontal",
+			loop: false,
+			dispItems: 1,
+			pagination: false,
+			paginationPosition: "inside",
+			autoSlide: false,
+			autoSlideInterval: 3000,
+			delayAutoSlide: false,
+			combinedClasses: false,
+			effect: "slide",
+			slideEasing: "swing",
+			animSpeed: "normal",
+			equalWidths: "true"
+		});
+    });
+</script>
+    
+<div class="hotcarousel">
+    <div class="foo">
+         <ul style="margin:0; padding:0">
+    
+            <li><img src="../../images/stories/demo/carousel/hall0.jpg" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/demo/carousel/hall0.jpg" alt="" width="904" height="185" /></li>
+<li><img src="../../images/stories/demo/carousel/hall1.jpg" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/demo/carousel/hall1.jpg" alt="" width="904" height="185" /></li>
+<li><img src="../../images/stories/demo/carousel/hall2.jpg" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/demo/carousel/hall2.jpg" alt="" width="904" height="185" /></li>
+<li><img src="../../images/stories/demo/carousel/hall3.jpg" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/demo/carousel/hall3.jpg" alt="" width="904" height="185" /></li>
+    
+        </ul>
+    </div>
+</div>		</div>
+	
+        </div>
+        <div class="clr"></div>
+    </div>
+        <div class="main_area_wrap">
+        <div class="main_area">
+            <div id="column_left">
+			<div class="moduletable">
+		<h3><span>Main</span> Menu</h3>        
+					<div>
+<ul class="menu">
+<li class="item-121 current active"><a href="hot-joomla-carousel.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-39-43/hot-joomla-carousel" ><img src="../../images/stories/ext_mod.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/ext_mod.png" alt="Hot Joomla Carousel" /><span class="image-title">Hot Joomla Carousel</span> </a></li><li class="item-120"><a href="hot-joomla-gallery.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-39-43/hot-joomla-gallery" ><img src="../../images/stories/ext_mod.png" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/ext_mod.png" alt="Hot Joomla Gallery" /><span class="image-title">Hot Joomla Gallery</span> </a></li></ul>
+</div>
+		</div>
+			<div class="moduletable_contact">
+		<h3><span>Get</span> a FREE Quote</h3>        
+					<div><div class="rapid_contact _contact"><form action="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-39-43/hot-joomla-carousel" method="post">
+<div class="rapid_contact intro_text _contact">By phone: +1 (800) 123-4567</div>
+<table><tr><td>Email:</td><td><input class="rapid_contact inputbox _contact" type="text" name="rp_email" size="20" value=""/></td></tr>
+<tr><td>Subject:</td><td><input class="rapid_contact inputbox _contact" type="text" name="rp_subject" size="20" value=""/></td></tr>
+<tr><td valign="top">Message:</td><td><textarea class="rapid_contact textarea _contact" name="rp_message" cols="31" rows="4"></textarea></td></tr>
+<tr><td>6 + 3 =</td><td><input class="rapid_contact inputbox _contact" type="text" name="rp_anti_spam_answer" size="20" value=""/></td></tr>
+<tr><td colspan="2"><input class="rapid_contact button _contact" type="submit" value="Send Message" style="width: 50%"/></td></tr></table></form></div>
+</div>
+		</div>
+	
+</div>
+<div id="content_wrap">
+    <div class="content_pad_noright">
+		        
+<div id="system-message-container">
+</div>
+        <div class="item-page">
+	<h2>
+			<a href="hot-joomla-carousel.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-39-43/hot-joomla-carousel">
+		Hot Joomla Carousel</a>
+		</h2>
+
+	<ul class="actions">
+						<li class="print-icon">
+			<a href="hot-joomla-carousel-tmpl=component&print=1&page=.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-39-43/hot-joomla-carousel?tmpl=component&print=1&page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="../../media/system/images/printButton.png" tppabs="http://demo.hotjoomlatemplates.com/business/media/system/images/printButton.png" alt="Print"  /></a>			</li>
+		
+					<li class="email-icon">
+			<a href="../component/mailto/-tmpl=component&template=hot_business&link=57a8ac23b46ce8b5210e7aeca991101ff9a61fae.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/component/mailto/?tmpl=component&template=hot_business&link=57a8ac23b46ce8b5210e7aeca991101ff9a61fae" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="../../media/system/images/emailButton.png" tppabs="http://demo.hotjoomlatemplates.com/business/media/system/images/emailButton.png" alt="Email"  /></a>			</li>
+				
+				
+		
+	</ul>
+
+
+
+
+	
+<hr />
+
+	<p>Need to display your images as a carousel? Easily done with our new Joomla extension.</p>
+<p>HOT Joomla Carousel is a simple Joomla module that will help you to show your photos in a carousel style.  You can see how it works on this demo site. Usage is very simple. You  need to enter path to your images and your carousel is ready.
+</p>
+<h3>USAGE INSTRUCTIONS</h3>
+<p>Open module parameters in Extensions &gt; Module Manager &gt; HOT Joomla Carousel. You'll see that some default parameters are already there. However, you should change some of them to accomodate module for usage on your site.</p>
+<ul>
+  <li>LOAD JQUERY: Select wheter to load jQuery library or not.  If your   template already loads it, you may disable this to avoid  possible   javascript errors.</li>
+  <li>FOLDER: Where your images are stored, relative to Joomla root   directory.</li>
+  <li>OVERALL WIDTH OF MODULE: Overall width of module in pixels (in   example 200)</li>
+  <li>OVERALL WIDTH OF MODULE: Overall height of module in pixels   (in example 150)</li>
+  <li>NUMBER OF IMAGES ON SCREEN: Number of images that will be   shown on screen at the same time (in example 5)</li>
+  <li>WIDTH OF IMAGES: Width of images in carousel in pixels (in   example 128)</li>
+  <li>HEIGHT OF IMAGES: Height of images in carousel in pixels (in   example 128)</li>
+  <li>MARGIN BETWEEN TWO IMAGES: Distance beween two neighbor images   in pixels (in example 10)</li>
+  <li>PADDING BETWEEN BORDER AND IMAGE: Padding beween image borders   and images in pixels (in example 2)</li>
+  <li>BORDER WIDTH: Width of borders of images in pixels (in example   2)</li>
+  <li>BORDER COLOR: Color of borders of images in hexadecimal format   (in example 000000)</li>
+  <li>SHOW PAGINATION: Select whether to display linked numbers of   carousel pages or not</li>
+  <li>AUTOSLIDE: Select whether to change images automatically or   not</li>
+  <li>AUTOSLIDE INTERVAL: Time in milliseconds between change of   slides (only if autoslide enabled)</li>
+  <li>SELECT TRANSITION EFFECT: Select slide or fade transition   effect</li>
+  <li>ANIMATION SPEED: Select speed of transition animation</li>
+  <li>DIRECTION OF IMAGES: Select horizontal to display images in a   row, or select vertical to display images in a column</li>
+  <li>TRANSITION LOOP: Select whether to show transition of images   in loop or not</li>
+</ul> 	
+	</div>
+            </div>
+</div>            <div class="clr"></div>
+        </div>
+    </div>
+        <div class="bottom_wrap">
+        <div class="bottom">
+                        <div class="module_padding last">
+                <div class="modulerow">
+                    <div id="c1">
+                        		<div class="moduletable">
+					<h3>Featured Clients</h3>
+					
+
+<div class="custom"  >
+	<div class="sponsor"><a href="#"><img src="../../images/stories/demo/sponsor1.jpg" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/demo/sponsor1.jpg" width="150" height="85" alt="sponsor" class="sponsor_img" /></a><a href="#"><img src="../../images/stories/demo/sponsor2.jpg" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/demo/sponsor2.jpg" width="150" height="85" alt="sponsor" class="sponsor_img" /></a><a href="#"><img src="../../images/stories/demo/sponsor3.jpg" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/demo/sponsor3.jpg" width="150" height="85" alt="sponsor" class="sponsor_img" /></a><a href="#"><img src="../../images/stories/demo/sponsor4.jpg" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/demo/sponsor4.jpg" width="150" height="85" alt="sponsor" class="sponsor_img" /></a><a href="#"><img src="../../images/stories/demo/sponsor5.jpg" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/demo/sponsor5.jpg" width="150" height="85" alt="sponsor" class="sponsor_img" /></a><a href="#"><img src="../../images/stories/demo/sponsor6.jpg" tppabs="http://demo.hotjoomlatemplates.com/business/images/stories/demo/sponsor6.jpg" width="150" height="85" alt="sponsor" class="sponsor_img last_img" /></a></div></div>
+		</div>
+	
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+                        <div class="clr"></div>
+        </div>
+    </div>
+            <div class="footer_wrap">
+        <div class="footer">
+                        <div class="module_padding ">
+                		<div class="moduletable">
+					
+<ul class="menu">
+<li class="item-183"><a href="../features.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features" >About HotBusiness</a></li><li class="item-184"><a href="../features/module-positions.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/module-positions" >Module Positions Guide</a></li><li class="item-185"><a href="../features/infinite-colors.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/infinite-colors" >Infinite Color Combination</a></li><li class="item-186"><a href="../features/flexible-widths.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/flexible-widths" >Flexible Widths</a></li><li class="item-187"><a href="javascript:if(confirm('http://demo.hotjoomlatemplates.com/business/index.php?Itemid=138  \n\nThis file was not retrieved by Teleport Pro, because the server reports that this file cannot be found.  \n\nDo you want to open it from the server?'))window.location='http://demo.hotjoomlatemplates.com/business/index.php?Itemid=138'" tppabs="http://demo.hotjoomlatemplates.com/business/index.php?Itemid=138" >Search Engine Optimized</a></li></ul>
+		</div>
+	
+                <div class="clr"></div>
+            </div>
+                        <div class="module_padding ">
+                		<div class="moduletable">
+					
+<ul class="menu">
+<li class="item-188"><a href="../features/typography.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/typography" >Typography Guide</a></li><li class="item-189"><a href="../features/no-conflicts.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/no-conflicts" >No Script Conflicts</a></li><li class="item-190"><a href="../features/2011-09-01-10-53-23/hot-menu.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/2011-09-01-10-53-23/hot-menu" >Hot Menu Drop-Downs</a></li><li class="item-191"><a href="../features/2011-09-01-10-53-23/reflection-effect.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/2011-09-01-10-53-23/reflection-effect" >Reflection Effect</a></li><li class="item-192"><a href="../features/2011-09-01-10-53-23/top-panel.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/features/2011-09-01-10-53-23/top-panel" >Top Panel Feature</a></li></ul>
+		</div>
+	
+                <div class="clr"></div>
+            </div>
+                        <div class="module_padding ">
+                		<div class="moduletable">
+					
+<ul class="menu">
+<li class="item-193"><a href="hot-joomla-gallery.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-39-43/hot-joomla-gallery" >Hot Joomla Gallery</a></li><li class="item-194 active"><a href="hot-joomla-carousel.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-39-43/hot-joomla-carousel" >Hot Joomla Carousel</a></li><li class="item-195"><a href="../2011-04-19-08-48-51/hotstart-with-demo.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-48-51/hotstart-with-demo" >HotStart Installation</a></li><li class="item-196"><a href="../2011-04-19-08-48-51/basic-installation-no-demo.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-48-51/basic-installation-no-demo" >Basic Installation</a></li><li class="item-197"><a href="../2011-04-19-08-41-50/blog.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-41-50/blog" >Blog Posts</a></li></ul>
+		</div>
+	
+                <div class="clr"></div>
+            </div>
+                        <div class="module_padding last">
+                		<div class="moduletable">
+					
+<ul class="menu">
+<li class="item-198"><a href="javascript:if(confirm('http://www.hotjoomlatemplates.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.hotjoomlatemplates.com/'" tppabs="http://www.hotjoomlatemplates.com/" >Joomla Templates</a></li><li class="item-200"><a href="javascript:if(confirm('http://www.hotjoomlatemplates.com/joomla-extensions  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.hotjoomlatemplates.com/joomla-extensions'" tppabs="http://www.hotjoomlatemplates.com/joomla-extensions" >Joomla Extensions</a></li><li class="item-199"><a href="javascript:if(confirm('http://www.hotjoomlatemplates.com/wordpress-themes  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.hotjoomlatemplates.com/wordpress-themes'" tppabs="http://www.hotjoomlatemplates.com/wordpress-themes" >WordPress Themes</a></li><li class="item-202"><a href="javascript:if(confirm('http://www.hotjoomlatemplates.com/wordpress-plugins  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.hotjoomlatemplates.com/wordpress-plugins'" tppabs="http://www.hotjoomlatemplates.com/wordpress-plugins" >WordPress Plugins</a></li><li class="item-201"><a href="javascript:if(confirm('http://www.hotjoomlatemplates.com/support-forum  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.hotjoomlatemplates.com/support-forum'" tppabs="http://www.hotjoomlatemplates.com/support-forum" >Support Forum</a></li></ul>
+		</div>
+	
+                <div class="clr"></div>
+            </div>
+                        <div class="clr"></div>
+        </div>
+    </div>
+                <div class="footer_wrap4">
+        <div class="footer4">
+            <div class="footer_copyright1">
+            	<div class="footer_copyright1_pad">
+                	
+<ul class="menu">
+<li class="item-143"><a href="../../index.htm" tppabs="http://demo.hotjoomlatemplates.com/business/" >Home</a></li><li class="item-144"><a href="../2011-04-19-08-41-50/contact.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-41-50/contact" >Contact Us</a></li><li class="item-145"><a href="../2011-04-19-08-41-50/blog.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-41-50/blog" >Blog</a></li><li class="item-146"><a href="../2011-04-19-08-41-50/search.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-41-50/search" >Search</a></li><li class="item-147"><a href="../2011-04-19-08-41-50/category-list.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-41-50/category-list" >FAQs</a></li><li class="item-148"><a href="../2011-04-19-08-41-50/web-links.htm" tppabs="http://demo.hotjoomlatemplates.com/business/index.php/2011-04-19-08-41-50/web-links" >Web Links</a></li></ul>
+
+                	<div class="clr"></div>
+                	<p class="copyright">Copyright &copy; 2014 Your Company. <a href="javascript:if(confirm('http://www.hotjoomlatemplates.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.hotjoomlatemplates.com/'" tppabs="http://www.hotjoomlatemplates.com/">Joomla Templates</a> by HotThemes.</p>
+                </div>
+            </div>
+            <div class="footer_copyright2">
+            	<div class="footer_copyright2_pad">
+                	
+
+<div class="custom"  >
+	<img src="../../templates/hot_business/images/twitter.png" tppabs="http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/twitter.png" align="right" alt="twitter" /> <a href="javascript:if(confirm('http://twitter.com/hotjoomla  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://twitter.com/hotjoomla'" tppabs="http://twitter.com/hotjoomla">Follow @hotjoomla on Twitter</a>&nbsp;</div>
+
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+</div>
+
+<div id="message">
+	<a href="#top" id="top-link"><img src="../../templates/hot_business/images/top.png" tppabs="http://demo.hotjoomlatemplates.com/business/templates/hot_business/images/top.png" width="53" height="53" alt="top" /></a>
+</div>
+</body>
+</html>
